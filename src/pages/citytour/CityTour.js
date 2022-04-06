@@ -1,25 +1,47 @@
 import Nav from '../../components/Navbar';
+import {CityTourTitle, CityTourHeadingText, CityTourCardDetails, CelebrityHomesTourDetails} from './CityTourList';
 import Header from '../../components/Header';
 import BookingModal from "../../components/BookingModal";
-import HeadingWithParagraphs from "../../components/TextHeadingWithPara";
-import ThreeTourCards from "../../components/CardsSmall";
-import CelebrityTourDetails from "../../components/TextSmallHeadingWithPara";
+import TextHeadingWithPara from "../../components/TextHeadingWithPara";
+import CardsSmall from "../../components/CardsSmall";
+import TextSmallHeadingWithPara from "../../components/TextSmallHeadingWithPara";
 import BusBackground from "../../components/PreFooterBackground";
 import TourTable from '../../components/TourTable';
 import Footer from '../../components/Footer';
 // import './App.css';
 
+const CityTourHeader = () => {
+    return (
+        <Header key={CityTourTitle.id} data={CityTourTitle}/>
+    );
+}
+
+const CityTourHeading = () => {
+    return <TextHeadingWithPara data={CityTourHeadingText}/>
+}
+
+const CityTourCards = () => {
+  return(
+    <CardsSmall data={CityTourCardDetails}/>
+  );
+}
+
+const CelebrityTourDetails = () => {
+    return <TextSmallHeadingWithPara data={CelebrityHomesTourDetails}/>
+}
+
 function CityTour() {
   return (
     <>
       <Nav />
-      <Header />
+      <CityTourHeader />
+      <CityTourHeading />
       {/* <BookingModal /> */}
-      <HeadingWithParagraphs />
-      <ThreeTourCards />
+      <CityTourCards />
       <CelebrityTourDetails />
-      <HeadingWithParagraphs />
-      <TourTable />
+      {/* <CelebrityTourDetails /> */}
+
+      {/* <TourTable /> */}
       <BusBackground/>
       <Footer />
     </>

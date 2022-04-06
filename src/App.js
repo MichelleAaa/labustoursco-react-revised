@@ -14,7 +14,10 @@
 // import ContactUs from './pages/ContactUs.js';
 // import FAQ from './pages/FAQ.js';
 // import AboutUs from  './pages/aboutus/AboutUs';
-import FAQ from  './pages/faq/FAQ';
+// import ContactUs from  './pages/contactus/ContactUs';
+// import HomePage from  './pages/home/HomePage';
+import CityTour from  './pages/citytour/CityTour';
+// import FAQ from  './pages/faq/FAQ';
 import './App.css';
 
 
@@ -22,8 +25,8 @@ function App() {
   return (
     <>
       {/* <AboutUs /> */}
-      {/* <HomePage /> */}
-      <FAQ />
+      {/* <Home /> */}
+      <CityTour />
     </>
   );
 }

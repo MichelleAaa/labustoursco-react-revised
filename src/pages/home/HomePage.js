@@ -1,23 +1,58 @@
 import Nav from '../../components/Navbar';
+import {HomeTitle} from './HomeList';
 import Header from '../../components/Header';
 import BookingModal from "../../components/BookingModal";
-import HeadingWithParagraphs from "../../components/TextHeadingWithPara";
-import HomeThreePictures from '../../components/ThreeImgGrid';
-import CardDetails from '../../components/CardsLarge';
+import {HomeHeadingText, HomeAboutToursText, TourCardDetails} from './HomeList';
+import TextHeadingWithPara from "../../components/TextHeadingWithPara";
+import {ThreeImgData} from './HomeList';
+import ThreeImgGrid from "../../components/ThreeImgGrid";
+
+import CardsLarge from '../../components/CardsLarge';
 import BusBackground from '../../components/PreFooterBackground';
 import Footer from '../../components/Footer';
 // import './App.css';
+
+const HomePageHeader = () => {
+    return (
+        <Header key={HomeTitle.id} data={HomeTitle}/>
+    )
+}
+
+const WelcomeHeading = () => {
+    return <TextHeadingWithPara data={HomeHeadingText}/>
+}
+
+const HomeThreeImg = () => {
+  return (
+    <ThreeImgGrid img={ThreeImgData} />
+  )
+}
+
+const ToursHeading = () => {
+  return (
+    <TextHeadingWithPara data={HomeAboutToursText}/>
+  );
+}
+
+const AboutTourCards = () => {
+  return(
+    <CardsLarge data={TourCardDetails}/>
+  );
+}
 
 function HomePage() {
   return (
     <>
       <Nav />
-      <Header />
+      <HomePageHeader />
+      <WelcomeHeading />
       {/* <BookingModal /> */}
-      <HeadingWithParagraphs />
-      <HomeThreePictures />
-      <HeadingWithParagraphs />
-      <CardDetails />
+      {/* <HeadingWithParagraphs /> */}
+      <HomeThreeImg />
+      {/* <HeadingWithParagraphs /> */}
+      {/* <CardDetails /> */}
+      <ToursHeading />
+      <AboutTourCards />
       <BusBackground showReviewCarousel={true}/>
       <Footer />
     </>

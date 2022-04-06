@@ -31,10 +31,12 @@ const Accordion = (props) => {
 }
 
 const AccordionItemLeft = (item) => {
-    console.log("this is the data in accordionitemleft");
+    console.log("this is the item in accordionitemleft");
+    console.log(item);
     const props = useContext(ItemContext);
     console.log('props.item.id value in accordionitemleft');
     console.log(props.item.id);
+
     const val = props.item.id;
     console.log("this is the value of va, which is item.key in accoridonitemleft" + val);
     return (
