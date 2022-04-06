@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+// import Nav from './components/Navbar';
+// import Header from './components/Header';
+// import BookingModal from "./components/BookingModal";
+// import HeadingWithParagraphs from "./components/HeadingWithParagraphs";
+// import HomeThreePictures from './components/HomeThreePictures';
+// import CardDetails from './components/CardDetails';
+// import BusBackground from './components/BusBackground';
+// import Footer from './components/Footer';
+
+
+// import HomePage from './pages/home/HomePage';
+// import AboutUs from './pages/AboutUs.js';
+// import CityTour from './pages/CityTour.js';
+// import ContactUs from './pages/ContactUs.js';
+// import FAQ from './pages/FAQ.js';
+// import AboutUs from  './pages/aboutus/AboutUs';
+import FAQ from  './pages/faq/FAQ';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <AboutUs /> */}
+      {/* <HomePage /> */}
+      <FAQ />
+    </>
   );
 }
 
