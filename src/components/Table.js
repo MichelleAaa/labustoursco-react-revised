@@ -1,32 +1,25 @@
 import React from 'react';
 
-const TourTable = () => {
+const Table = (props) => {
     return (
-        <div className="container-fluid pt-5" id="stops">
+        <div className="container-fluid pt-5">
             <div className="row d-flex justify-content-center">
                 <div className="col-11 col-sm-9 col-lg-6 px-0">
                     <table className="table table-hover text-center">
                         <thead>
                             <tr>
-                                <th scope="col">Tour Package</th>
-                                <th scope="col">1 Passenger</th>
-                                <th scope="col">2 Passengers</th>
-                                <th scope="col">3+ Passengers</th>
+                                {props.data.headings.map(heading => <THead key={heading.id} headingData={heading}/>)}
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">City Scapes</th>
-                                <td>$100 per Ticket</td>
-                                <td>$80 per Ticket</td>
-                                <td>$75 per Ticket</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">City Scapes & Celebrity Homes</th>
-                                <td>$120 per Ticket</td>
-                                <td>$100 per Ticket</td>
-                                <td>$95 per Ticket</td>
-                            </tr>
+                                {props.data.rowData.map(row => {
+                                    return ( 
+
+                                        <tr key={row.id}>
+                                            <TRow cells={row.cells}/>
+                                        </tr>
+                                        );
+                                })}
                         </tbody>
                     </table>
                 </div>
@@ -42,5 +35,18 @@ const TourTable = () => {
     );
 }
 
+const THead = (props) => {
+    return (
+        <th scope="col">{props.headingData.title}</th>
+    );
+}
 
-export default TourTable;
+const TRow = (props) => {
+    console.log(props.cells);
+    console.log(props);
+    return (
+        props.cells.map(cell => cell.id === 0 ? <th key={cell.id} scope="row">{cell.title}</th> : <td key={cell.id}>{cell.title}</td> )
+    );
+}
+
+export default Table;

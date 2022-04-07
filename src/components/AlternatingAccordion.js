@@ -70,7 +70,7 @@ const AccordionInnerContent = (data) => {
     return(
             data.data.content.map((item) => {
                 return (
-                    <div className="card faq-card">
+                    <div key={item.id} className="card faq-card">
                         <div role="tab" className="card-header">
                             <h4>
                                 <a data-toggle="collapse" data-target={"#q" + item.id}>

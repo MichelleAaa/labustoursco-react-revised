@@ -16,7 +16,8 @@
 // import AboutUs from  './pages/aboutus/AboutUs';
 // import ContactUs from  './pages/contactus/ContactUs';
 // import HomePage from  './pages/home/HomePage';
-import CityTour from  './pages/citytour/CityTour';
+// import CityTour from  './pages/citytour/CityTour';
+import SeasideTour from  './pages/seasidetour/SeasideTour';
 // import FAQ from  './pages/faq/FAQ';
 import './App.css';
 
@@ -24,9 +25,10 @@ import './App.css';
 function App() {
   return (
     <>
-      {/* <AboutUs /> */}
+      {/* <FAQ /> */}
+      <SeasideTour />
       {/* <Home /> */}
-      <CityTour />
+      {/* <CityTour /> */}
     </>
   );
 }

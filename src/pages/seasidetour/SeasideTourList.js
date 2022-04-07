@@ -1,15 +1,15 @@
 import React from 'react';
-import imgTourCard1 from '../../assets/city-tour-card-beverly-hills.jpg';
-import imgTourCard2 from '../../assets/citytourbanner.jpg';
-import imgTourCard3 from '../../assets/city-tour-card-palms.jpg';
+import imgTourCard1 from '../../assets/beach-trip.jpg';
+import imgTourCard2 from '../../assets/venice-beach-skating.jpg';
+import imgTourCard3 from '../../assets/hollywood-brush.jpg';
 
-export const CityTourTitle = {
+export const SeasideTourTitle = {
     id: 0,
-    title: 'City Tour',
-    subtitle: 'Downtown L.A., Santa Monica, Hollywood, and Beverly Hills'
+    title: 'Seaside Tour',
+    subtitle: 'Visit Three Beaches in one Day!'
 };
 
-export const CityTourHeadingText = {
+export const SeasideTourHeadingText = {
     id: 0,
     title: "Lorem ipsum dolor sit amet",
     text: [
@@ -24,10 +24,10 @@ export const CityTourHeadingText = {
     ]
 };
 
-export const CityTourCardDetails = [
+export const SeasideTourCardDetails = [
     {
         id: 0,
-        title: 'Tons of Stops',
+        title: 'See the Shore',
         subtext: "Some quick example text to build on the card title and make up the bulk of the card's content.",
         img: imgTourCard1,
         listText: [
@@ -51,7 +51,7 @@ export const CityTourCardDetails = [
     },
     {
         id: 1,
-        title: 'See the City',
+        title: 'Spend Time with Family',
         subtext: "Some quick example text to build on the card title and make up the bulk of the card's content.",
         img: imgTourCard2,
         listText: [
@@ -69,7 +69,7 @@ export const CityTourCardDetails = [
             }
         ],
         button: {
-                text: 'Click Here to Book the City Tour Now',
+                text: 'Click Here to Book the Seaside Tour Now',
                 link: ''
             }
     },
@@ -115,9 +115,9 @@ export const CelebrityHomesTourDetails = {
 };
 
 
-export const CityTourDetailsText = {
+export const SeasideTourDetailsText = {
     id: 0,
-    title: "See Downtown L.A., Santa Monica, Beverly Hills, and More",
+    title: "Visit Venice Beach, Santa Monica Beach, and More",
     text: [
         {
             id: 0,
@@ -130,9 +130,9 @@ export const CityTourDetailsText = {
     ]
 };
 
-export const CityTourPricingDetails = {
+export const SeasideTourPricingDetails = {
     id: 0,
-    title: "City Tour Package",
+    title: "Seaside Adventure Package",
     headings: [
         {
             id: 0,
@@ -157,7 +157,7 @@ export const CityTourPricingDetails = {
                 cells: [
                     {
                         id: 0,
-                        title: "City Scapes"
+                        title: "Seaside Adventure"
                     },
                     {
                         id: 1,
@@ -178,7 +178,7 @@ export const CityTourPricingDetails = {
                 cells: [
                 {
                     id: 0,
-                    title: "City Scapes & Celebrity Homes"
+                    title: "Seaside Adventure & Celebrity Homes"
                 },
                 {
                     id: 1,

@@ -1,12 +1,12 @@
 import Nav from '../../components/Navbar';
-import {CityTourTitle, CityTourHeadingText, CityTourCardDetails, CelebrityHomesTourDetails} from './CityTourList';
+import {CityTourTitle, CityTourHeadingText, CityTourCardDetails, CelebrityHomesTourDetails, CityTourDetailsText, CityTourPricingDetails} from './CityTourList';
 import Header from '../../components/Header';
 import BookingModal from "../../components/BookingModal";
 import TextHeadingWithPara from "../../components/TextHeadingWithPara";
 import CardsSmall from "../../components/CardsSmall";
 import TextSmallHeadingWithPara from "../../components/TextSmallHeadingWithPara";
 import BusBackground from "../../components/PreFooterBackground";
-import TourTable from '../../components/TourTable';
+import Table from '../../components/Table';
 import Footer from '../../components/Footer';
 // import './App.css';
 
@@ -30,6 +30,14 @@ const CelebrityTourDetails = () => {
     return <TextSmallHeadingWithPara data={CelebrityHomesTourDetails}/>
 }
 
+const CityTourDetails = () => {
+    return <TextHeadingWithPara data={CityTourDetailsText}/>
+}
+
+const CityTourTable = () => {
+    return <Table key={CityTourPricingDetails.id} data={CityTourPricingDetails}/>
+}
+
 function CityTour() {
   return (
     <>
@@ -39,9 +47,8 @@ function CityTour() {
       {/* <BookingModal /> */}
       <CityTourCards />
       <CelebrityTourDetails />
-      {/* <CelebrityTourDetails /> */}
-
-      {/* <TourTable /> */}
+      <CityTourDetails />
+      <CityTourTable />
       <BusBackground/>
       <Footer />
     </>
