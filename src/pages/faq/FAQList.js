@@ -5,7 +5,7 @@ import img2 from '../../assets/card-seaside.jpg';
 
 export const FAQTitle = {
     id: 0,
-    title: 'FAQ',
+    title: 'F.A.Q.',
     subtitle: 'Questions and Answers'
 }
 

@@ -55,7 +55,7 @@ const AccordionItemLeft = (item) => {
                     </div>
                     <div className="col-10 col-sm-11 col-md-7 about-text">
                         <div className="faq-accordion-size">
-                           <div className="accordion" id={"accordion" + props.item.id}>
+                            <div className="accordion" id={"accordion" + props.item.id}>
                                 <AccordionInnerContent key={props.item.id} data={item} val={props.item.id}/>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {ReviewCarouselData} from '../pages/home/HomeList';
 
 const ReviewCarousel = () => {
     return (
@@ -8,101 +9,14 @@ const ReviewCarousel = () => {
                     <div className="comment-box">
                         <div className="carousel slide pb-5 px-5" id="carousel-reviews" data-ride="carousel">
                             <ol className="carousel-indicators">
-                                <li data-target="#carousel-reviews" data-slide-to="0" className="active"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="1"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="2"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="3"></li>
+                                {
+                                ReviewCarouselData.map(review => <CarouselSliders key={review.id} reviewData={review}/>)
+                                }
                             </ol>
-
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <div className="d-block">
-                                        <div className="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 className="pt-0 testimonial-heading pb-lg-4 ">Excellent!</h2>
-                                            <div className="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div className="star p-1">
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p className="p-1">It was so much fun! We got to see so many places and took so
-                                                many photos to never forget!</p>
-                                        </div>
-                                        <div className="p-1 pt-3">
-                                            <i>Tina from Salt Lake City, UT</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="d-block">
-                                        <div className="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 className="pt-0 testimonial-heading pb-lg-4 ">A Trip to Never Forget</h2>
-                                            <div className="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div className="star p-1">
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p className="p-1">The kids had a great time. My only regret is that the time
-                                                went by too fast.</p>
-                                        </div>
-                                        <div className="p-1 pt-3">
-                                            <i>Justin from Seattle, WA</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="d-block">
-                                        <div className="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 className="pt-0 testimonial-heading pb-lg-4 ">We Had a Blast!</h2>
-                                            <div className="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div className="star p-1">
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p className="p-1">So glad we booked this tour, we got to see so many places
-                                                around the city.</p>
-                                        </div>
-                                        <div className="p-1 pt-3">
-                                            <i>Jennifer from Boston, MA</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="d-block">
-                                        <div className="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 className="pt-0 testimonial-heading pb-lg-4 ">Worth It</h2>
-                                            <div className="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div className="star p-1">
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                                <i className="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p className="p-1">My family and I are considering moving to L.A., so this tour
-                                                was great to get a sense of what the area has to offer.</p>
-                                        </div>
-                                        <div className="p-1 pt-3">
-                                            <i>Tony from San Antonio, TX</i>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="carousel-inner">   
+                                {
+                                ReviewCarouselData.map(review => <Review key={review.id} reviewData={review}/>)
+                                }
                             </div>
                             <a className="carousel-control-prev" href="#carousel-reviews" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,5 +34,45 @@ const ReviewCarousel = () => {
     );
 }
 
+const CarouselSliders = (props) => {
+    if(props.reviewData.id === 0) {
+        return <li data-target="#carousel-reviews" data-slide-to="0"></li>;
+    }else {
+        return <li data-target="#carousel-reviews" data-slide-to={props.reviewData.id}></li>;
+    }
+}
+
+const Review = (props) => {
+    return (  
+        <div className={props.reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
+            <div className="d-block">
+                <div className="m-0 m-md-1 mb-3 pt-0">
+                    <h2 className="pt-0 testimonial-heading pb-lg-4 ">{props.reviewData.heading}</h2>
+                    <div className="p-1">
+                        <p>My rating:</p>
+                    </div>
+                    <div className="star p-1">
+                        <ReviewStars stars={props.reviewData.stars}/>
+                    </div>
+                    <p className="p-1">{props.reviewData.text}</p>
+                </div>
+                <div className="p-1 pt-3">
+                    <i>{props.reviewData.name} from {props.reviewData.location}</i>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+const ReviewStars = (props) => {  
+    let starsArr = [];
+    for (let i = 0; i < props.stars; i++){
+        starsArr.push(i);
+    }
+
+    return (
+    starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)
+    );
+}
 
 export default ReviewCarousel;

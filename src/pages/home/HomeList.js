@@ -106,3 +106,38 @@ export const TourCardDetails = [
         }
     }
 ];
+
+export const ReviewCarouselData = [
+    {
+        id: 0,
+        heading: 'Excellent!',
+        stars: 5,
+        text: 'It was so much fun! We got to see so many places and took so many photos to never forget!',
+        name: 'Tina',
+        location: 'Salt Lake City, UT'
+    },
+    {
+        id: 1,
+        heading: 'A Trip to Never Forget',
+        stars: 5,
+        text: 'The kids had a great time. My only regret is that the time went by too fast.',
+        name: 'Justin',
+        location: 'Seattle, WA'
+    },
+    {
+        id: 2,
+        heading: 'We Had a Blast!',
+        stars: 5,
+        text: 'So glad we booked this tour, we got to see so many places around the city.',
+        name: 'Jennifer',
+        location: 'Boston, MA'
+    },
+    {
+        id: 3,
+        heading: 'Worth It',
+        stars: 5,
+        text: 'My family and I are considering moving to L.A., so this tour was great to get a sense of what the area has to offer.',
+        name: 'Tony',
+        location: 'San Antonio, TX'
+    }
+];

@@ -8,7 +8,8 @@ import {ThreeImgData} from './HomeList';
 import ThreeImgGrid from "../../components/ThreeImgGrid";
 
 import CardsLarge from '../../components/CardsLarge';
-import BusBackground from '../../components/PreFooterBackground';
+import PreFooterBackground from '../../components/PreFooterBackground';
+import ReviewCarousel from '../../components/ReviewCarousel';
 import Footer from '../../components/Footer';
 // import './App.css';
 
@@ -53,7 +54,7 @@ function HomePage() {
       {/* <CardDetails /> */}
       <ToursHeading />
       <AboutTourCards />
-      <BusBackground showReviewCarousel={true}/>
+      <PreFooterBackground showReviewCarousel={true}/>
       <Footer />
     </>
   );
