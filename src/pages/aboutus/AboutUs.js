@@ -8,9 +8,8 @@ import BusBackground from '../../components/PreFooterBackground';
 import Footer from '../../components/Footer';
 
 const AboutUsHeader = () => {
-  console.log(AboutTitle);
     return (
-        <Header key={AboutTitle.id} data={AboutTitle}/>
+        <Header key={AboutTitle.id} headerData={AboutTitle}/>
     );
 }
 

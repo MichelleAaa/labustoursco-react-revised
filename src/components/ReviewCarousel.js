@@ -34,44 +34,44 @@ const ReviewCarousel = () => {
     );
 }
 
-const CarouselSliders = (props) => {
-    if(props.reviewData.id === 0) {
+const CarouselSliders = ({ reviewData }) => {
+    if(reviewData.id === 0) {
         return <li data-target="#carousel-reviews" data-slide-to="0"></li>;
     }else {
-        return <li data-target="#carousel-reviews" data-slide-to={props.reviewData.id}></li>;
+        return <li data-target="#carousel-reviews" data-slide-to={reviewData.id}></li>;
     }
 }
 
-const Review = (props) => {
+const Review = ({ reviewData }) => {
     return (  
-        <div className={props.reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
+        <div className={reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
             <div className="d-block">
                 <div className="m-0 m-md-1 mb-3 pt-0">
-                    <h2 className="pt-0 testimonial-heading pb-lg-4 ">{props.reviewData.heading}</h2>
+                    <h2 className="pt-0 testimonial-heading pb-lg-4 ">{reviewData.heading}</h2>
                     <div className="p-1">
                         <p>My rating:</p>
                     </div>
                     <div className="star p-1">
-                        <ReviewStars stars={props.reviewData.stars}/>
+                        <ReviewStars stars={reviewData.stars}/>
                     </div>
-                    <p className="p-1">{props.reviewData.text}</p>
+                    <p className="p-1">{reviewData.text}</p>
                 </div>
                 <div className="p-1 pt-3">
-                    <i>{props.reviewData.name} from {props.reviewData.location}</i>
+                    <i>{reviewData.name} from {reviewData.location}</i>
                 </div>
             </div>
         </div>
     );
 }
 
-const ReviewStars = (props) => {  
+const ReviewStars = ({ stars }) => {  
     let starsArr = [];
-    for (let i = 0; i < props.stars; i++){
+    for (let i = 0; i < stars; i++){
         starsArr.push(i);
     }
 
     return (
-    starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)
+        starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)
     );
 }
 

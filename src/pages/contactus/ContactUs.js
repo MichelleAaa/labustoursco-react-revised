@@ -1,5 +1,5 @@
 import Nav from '../../components/Navbar';
-import {ContactUsTitle} from './ContactUsList';
+import {ContactUsTitle, ContactUsFormData} from './ContactUsList';
 import Header from '../../components/Header';
 import BookingModal from "../../components/BookingModal";
 import {WelcomeText} from './ContactUsList';
@@ -10,14 +10,19 @@ import Footer from '../../components/Footer';
 // import './App.css';
 
 const ContactUsHeader = () => {
-  console.log(ContactUsTitle);
     return (
-        <Header key={ContactUsTitle.id} data={ContactUsTitle}/>
+        <Header key={ContactUsTitle.id} headerData={ContactUsTitle}/>
     );
 }
 
 const WelcomeHeading = () => {
-    return <TextHeadingWithPara data={WelcomeText}/>
+    return <TextHeadingWithPara textData={WelcomeText}/>
+}
+
+const ContactUsForm = () => {
+    return (
+        <ContactForm ContactUsFormData={ContactUsFormData}/>
+    );
 }
 
 function ContactUs() {
@@ -28,6 +33,7 @@ function ContactUs() {
                 {/* <BookingModal /> */}
                 <WelcomeHeading />
                 {/* <ContactForm /> */}
+                <ContactUsForm />
                 <BusBackground/>
                 <Footer />
             </>

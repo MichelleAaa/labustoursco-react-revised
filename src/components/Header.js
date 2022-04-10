@@ -1,7 +1,7 @@
 import React from 'react';
+import BookingModal from './BookingModal';
 
-
-const Header = (props) => {
+const Header = ({ headerData }) => {
     return (
         <header className="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
             <div className="center-vertically">
@@ -12,7 +12,7 @@ const Header = (props) => {
                                 <div className="col-11 mx-auto">
                                     <div className="d-flex justify-content-start text-center">
                                         <div className="col-11 col-sm-6 ml-0 pl-0">
-                                            <h5 className="jumbotron-title text-center text-nowrap "> <span className="jumbotron-la"> {props.data.supertitle ? props.data.supertitle : ''} </span>{props.data.title}</h5>
+                                            <h5 className="jumbotron-title text-center text-nowrap "> <span className="jumbotron-la"> {headerData.supertitle ? headerData.supertitle : ''} </span>{headerData.title}</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -26,7 +26,7 @@ const Header = (props) => {
                         <div className="row d-flex justify-content-center">
                             <div className="col-11 col-md-8 col-xl-10 mb-xl-0">
                                 <div>
-                                    <h1 className="text-center m-4"> <span className="header-tour-descrip">{props.data.subtitle}</span></h1>
+                                    <h1 className="text-center m-4"> <span className="header-tour-descrip">{headerData.subtitle}</span></h1>
                                 </div>
                             </div>
                         </div>

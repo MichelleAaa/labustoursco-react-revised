@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Table = (props) => {
+const Table = ({ pricingTableData }) => {
     return (
         <div className="container-fluid pt-5">
             <div className="row d-flex justify-content-center">
@@ -8,15 +8,15 @@ const Table = (props) => {
                     <table className="table table-hover text-center">
                         <thead>
                             <tr>
-                                {props.data.headings.map(heading => <THead key={heading.id} headingData={heading}/>)}
+                                {pricingTableData.headings.map(heading => <THead key={heading.id} headingData={heading}/>)}
                             </tr>
                         </thead>
                         <tbody>
-                                {props.data.rowData.map(row => {
+                                {pricingTableData.rowData.map(row => {
                                     return ( 
 
                                         <tr key={row.id}>
-                                            <TRow cells={row.cells}/>
+                                            <TRow cellsData={row.cells}/>
                                         </tr>
                                         );
                                 })}
@@ -35,17 +35,15 @@ const Table = (props) => {
     );
 }
 
-const THead = (props) => {
+const THead = ({ headingData }) => {
     return (
-        <th scope="col">{props.headingData.title}</th>
+        <th scope="col">{headingData.title}</th>
     );
 }
 
-const TRow = (props) => {
-    console.log(props.cells);
-    console.log(props);
+const TRow = ({ cellsData }) => {
     return (
-        props.cells.map(cell => cell.id === 0 ? <th key={cell.id} scope="row">{cell.title}</th> : <td key={cell.id}>{cell.title}</td> )
+        cellsData.map(cell => cell.id === 0 ? <th key={cell.id} scope="row">{cell.title}</th> : <td key={cell.id}>{cell.title}</td> )
     );
 }
 

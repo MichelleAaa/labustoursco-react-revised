@@ -12,30 +12,30 @@ import Footer from '../../components/Footer';
 
 const CityTourHeader = () => {
     return (
-        <Header key={CityTourTitle.id} data={CityTourTitle}/>
+        <Header key={CityTourTitle.id} headerData={CityTourTitle}/>
     );
 }
 
 const CityTourHeading = () => {
-    return <TextHeadingWithPara data={CityTourHeadingText}/>
+    return <TextHeadingWithPara textData={CityTourHeadingText}/>
 }
 
 const CityTourCards = () => {
   return(
-    <CardsSmall data={CityTourCardDetails}/>
+    <CardsSmall tourCardsData={CityTourCardDetails}/>
   );
 }
 
 const CelebrityTourDetails = () => {
-    return <TextSmallHeadingWithPara data={CelebrityHomesTourDetails}/>
+    return <TextSmallHeadingWithPara textData={CelebrityHomesTourDetails}/>
 }
 
 const CityTourDetails = () => {
-    return <TextHeadingWithPara data={CityTourDetailsText}/>
+    return <TextHeadingWithPara textData={CityTourDetailsText}/>
 }
 
 const CityTourTable = () => {
-    return <Table key={CityTourPricingDetails.id} data={CityTourPricingDetails}/>
+    return <Table key={CityTourPricingDetails.id} pricingTableData={CityTourPricingDetails}/>
 }
 
 function CityTour() {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import img0 from '../../assets/venice-beach-sand.jpg';
 import img1 from '../../assets/city-tour-card-beverlyhills.jpg';
 import img2 from '../../assets/city-tour-card-palms.jpg';
 
@@ -21,16 +20,8 @@ export const WelcomeText = {
 }
 
 export const ContactUsFormData = {
-    formImg: [
-        {
-            id: 0,
-            img: img1
-        },
-        {
-            id: 1,
-            img: img2
-        }
-    ],
+    formImg: [img1, img2],
+    formTitle: "Contact Us",
     formData: {
         firstName: {
             input: 'First Name',
@@ -44,18 +35,45 @@ export const ContactUsFormData = {
             input: "Email Address",
             placeholder: 'name@example.com'
         },
-        questionType: {
-            1: 'Select an option Below',
-            2: 'City Tour Information',
-            3: 'Seaside Tour Information',
-            4: 'Celebrity Tour Information',
-            5: 'Payment',
-            6: 'Boarding',
-            7: 'Other'
-        },
-        textBox: {
-            text: 'Comments and/or Questions'
-        } 
+        question: {
+            title: 'What is the general nature of your question?',
+            selections: [
+                    {
+                        id: 0,
+                        optionText: 'Select an option Below'
+                    },
+                    {
+                        id: 1,
+                        optionText: 'City Tour Information'
+                    },
+                    {
+                        id: 2,
+                        optionText: 'Seaside Tour Information'
+                    },
+                    {
+                        id: 3,
+                        optionText: 'Celebrity Tour Information'
+                    },
+                    {
+                        id: 4,
+                        optionText: 'Payment'
+                    },
+                    {
+                        id: 5,
+                        optionText: 'Boarding'
+                    },
+                    {
+                        id: 6,
+                        optionText: 'Other'
+                    }
+                ]
+            },
+            textBox: {
+            title: 'Comments and/or Questions'
+            },
+            submitButton: {
+                text: "Submit"
+            }
+        }
     }
 
-}

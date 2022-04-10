@@ -15,12 +15,12 @@ import Footer from '../../components/Footer';
 
 const HomePageHeader = () => {
     return (
-        <Header key={HomeTitle.id} data={HomeTitle}/>
+        <Header key={HomeTitle.id} headerData={HomeTitle}/>
     )
 }
 
 const WelcomeHeading = () => {
-    return <TextHeadingWithPara data={HomeHeadingText}/>
+    return <TextHeadingWithPara textData={HomeHeadingText}/>
 }
 
 const HomeThreeImg = () => {
@@ -31,13 +31,13 @@ const HomeThreeImg = () => {
 
 const ToursHeading = () => {
   return (
-    <TextHeadingWithPara data={HomeAboutToursText}/>
+    <TextHeadingWithPara textData={HomeAboutToursText}/>
   );
 }
 
 const AboutTourCards = () => {
   return(
-    <CardsLarge data={TourCardDetails}/>
+    <CardsLarge cardsData={TourCardDetails}/>
   );
 }
 

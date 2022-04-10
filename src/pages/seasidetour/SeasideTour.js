@@ -12,34 +12,34 @@ import Footer from '../../components/Footer';
 
 const SeasideTourHeader = () => {
     return (
-        <Header key={SeasideTourTitle.id} data={SeasideTourTitle}/>
+        <Header key={SeasideTourTitle.id} headerData={SeasideTourTitle}/>
     );
 }
 
 const SeasideTourHeading = () => {
-    return <TextHeadingWithPara data={SeasideTourHeadingText}/>
+    return <TextHeadingWithPara textData={SeasideTourHeadingText}/>
 }
 
 const SeasideTourCards = () => {
-  return(
-    <CardsSmall data={SeasideTourCardDetails}/>
-  );
+    return(
+        <CardsSmall tourCardsData={SeasideTourCardDetails}/>
+    );
 }
 
 const CelebrityTourDetails = () => {
-    return <TextSmallHeadingWithPara data={CelebrityHomesTourDetails}/>
+    return <TextSmallHeadingWithPara textData={CelebrityHomesTourDetails}/>
 }
 
 const SeasideTourDetails = () => {
-    return <TextHeadingWithPara data={SeasideTourDetailsText}/>
+    return <TextHeadingWithPara textData={SeasideTourDetailsText}/>
 }
 
 const SeasideTourTable = () => {
-    return <Table key={SeasideTourPricingDetails.id} data={SeasideTourPricingDetails}/>
+    return <Table key={SeasideTourPricingDetails.id} pricingTableData={SeasideTourPricingDetails}/>
 }
 
 function SeasideTour() {
-  return (
+    return (
         <>
             <Nav />
             <SeasideTourHeader />
