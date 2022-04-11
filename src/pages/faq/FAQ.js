@@ -10,13 +10,13 @@ import Footer from '../../components/Footer';
 
 const FAQHeader = () => {
     return (
-        <Header key={FAQTitle.id} data={FAQTitle}/>
+        <Header key={FAQTitle.id} headerData={FAQTitle}/>
     );
 }
 
 const FAQAccordion = () => {
     return (
-        <Accordion key='faq' data={FAQAccordionData} />
+        <Accordion key='faq' accordionData={FAQAccordionData} />
     );
 }
 

@@ -65,10 +65,7 @@ const Review = ({ reviewData }) => {
 }
 
 const ReviewStars = ({ stars }) => {  
-    let starsArr = [];
-    for (let i = 0; i < stars; i++){
-        starsArr.push(i);
-    }
+    let starsArr = Array.from(Array(stars).keys());
 
     return (
         starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)

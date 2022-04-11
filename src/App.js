@@ -13,20 +13,20 @@ import BookingModal from "./components/BookingModal";
 // import ContactUs from './pages/ContactUs.js';
 // import FAQ from './pages/FAQ.js';
 // import AboutUs from  './pages/aboutus/AboutUs';
-import ContactUs from  './pages/contactus/ContactUs';
+// import ContactUs from  './pages/contactus/ContactUs';
 // import HomePage from  './pages/home/HomePage';
 // import CityTour from  './pages/citytour/CityTour';
-import SeasideTour from  './pages/seasidetour/SeasideTour';
-// import FAQ from  './pages/faq/FAQ';
+// import SeasideTour from  './pages/seasidetour/SeasideTour';
+import FAQ from  './pages/faq/FAQ';
 import './App.css';
 import './jQuery';
 
 function App() {
   return (
     <>
-      {/* <FAQ /> */}
+      <FAQ />
       {/* <SeasideTour /> */}
-      <ContactUs />
+      {/* <HomePage /> */}
       {/* <CityTour /> */}
     </>
   );
