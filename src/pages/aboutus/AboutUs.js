@@ -5,7 +5,6 @@ import BookingModal from "../../components/BookingModal";
 import MediaImgTitleText from '../../components/MediaImgTitleText';
 import {AboutData} from './AboutList';
 import BusBackground from '../../components/PreFooterBackground';
-import Footer from '../../components/Footer';
 
 const AboutUsHeader = () => {
     return (
@@ -27,7 +26,6 @@ function AboutUs() {
       {/* <BookingModal /> */}
       <AboutPageMedia />
       <BusBackground/>
-      <Footer />
     </>
   );
 }

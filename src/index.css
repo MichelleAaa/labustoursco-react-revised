@@ -420,6 +420,12 @@ table {
   color: white;
 }
 
+.btn-secondary:hover {
+  background-color: white;
+  background-image: linear-gradient(to right, rgba(227, 39, 39, 0.75), rgba(227, 39, 39, 0.95));
+  border: 1px solid #565656;
+}
+
 .btn-main {
   transition: transform .1s ease-in-out;
 }
@@ -429,7 +435,7 @@ table {
   filter: brightness(1.2);
 }
 
-.btn-text:link,
+.btn-text, .btn-text:link,
 .btn-text:visited {
   font-size: 1.7rem;
   color: white;
@@ -439,13 +445,7 @@ table {
   padding: 3px;
 }
 
-.btn-secondary:hover {
-  background-color: white;
-  background-image: linear-gradient(to right, rgba(227, 39, 39, 0.75), rgba(227, 39, 39, 0.95));
-  border: 1px solid #565656;
-}
-
-.btn-secondary:hover .btn-text {
+.btn-secondary:hover .btn-text, .btn-text:hover {
   color: #565656;
   text-shadow: 1px 1px 1px #565656;
 }

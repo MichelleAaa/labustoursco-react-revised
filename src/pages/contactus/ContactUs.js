@@ -6,8 +6,6 @@ import {WelcomeText} from './ContactUsList';
 import TextHeadingWithPara from "../../components/TextHeadingWithPara";
 import ContactForm from '../../components/ContactForm';
 import BusBackground from '../../components/PreFooterBackground';
-import Footer from '../../components/Footer';
-// import './App.css';
 
 const ContactUsHeader = () => {
     return (
@@ -32,10 +30,8 @@ function ContactUs() {
                 <ContactUsHeader />
                 {/* <BookingModal /> */}
                 <WelcomeHeading />
-                {/* <ContactForm /> */}
                 <ContactUsForm />
                 <BusBackground/>
-                <Footer />
             </>
     );
 }

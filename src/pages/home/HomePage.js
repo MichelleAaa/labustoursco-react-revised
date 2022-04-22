@@ -9,7 +9,6 @@ import ThreeImgGrid from "../../components/ThreeImgGrid";
 import CardsLarge from '../../components/CardsLarge';
 import PreFooterBackground from '../../components/PreFooterBackground';
 import ReviewCarousel from '../../components/ReviewCarousel';
-import Footer from '../../components/Footer';
 // import './App.css';
 
 const HomePageHeader = () => {
@@ -54,7 +53,6 @@ function HomePage() {
       <ToursHeading />
       <AboutTourCards />
       <PreFooterBackground showReviewCarousel={true}/>
-      <Footer />
     </>
   );
 }

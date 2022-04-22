@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BookingModal from './BookingModal';
 
 const CardsLarge = ({ cardsData }) => {
@@ -31,12 +32,13 @@ const LargeCard = ({ CardData }) => {
                         <div className="row d-flex justify-content-center align-items-center">
                             <div className="col-5">
                                 <div className="card-link-bottom">
-                                    <a href={CardData.button1.link} className="card-link" data-toggle="modal" data-target="#bookingModal">{CardData.button1.text}</a>
+                                    {/* <a href={CardData.button1.link} className="card-link" data-toggle="modal" data-target="#bookingModal">{CardData.button1.text}</a> */}
+                                    <BookingModal linkType={'text'} text={CardData.button1.text}/>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <div className="card-link-bottom">
-                                    <a href={CardData.button2.link} className="card-link">{CardData.button2.text} &rarr;</a>
+                                    <Link to={CardData.button2.link} className="card-link">{CardData.button2.text} &rarr;</Link>
                                 </div>
                             </div>
                         </div>

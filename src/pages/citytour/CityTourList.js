@@ -46,7 +46,7 @@ export const CityTourCardDetails = [
         ],
         button: {
                 text: 'Learn More About the Tour Schedule',
-                link: ''
+                link: '#stops'
             }
     },
     {
@@ -94,7 +94,7 @@ export const CityTourCardDetails = [
         ],
         button: {
                 text: 'Learn More About the Celebrity Homes Tour',
-                link: ''
+                link: '#celebHomesTour'
             }
     }
 ];
@@ -117,6 +117,7 @@ export const CelebrityHomesTourDetails = {
 
 export const CityTourDetailsText = {
     id: 0,
+    htmlId: 'stops',
     title: "See Downtown L.A., Santa Monica, Beverly Hills, and More",
     text: [
         {

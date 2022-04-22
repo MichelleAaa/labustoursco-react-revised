@@ -46,7 +46,7 @@ export const SeasideTourCardDetails = [
         ],
         button: {
                 text: 'Learn More About the Tour Schedule',
-                link: ''
+                link: '#stops'
             }
     },
     {
@@ -94,7 +94,7 @@ export const SeasideTourCardDetails = [
         ],
         button: {
                 text: 'Learn More About the Celebrity Homes Tour',
-                link: ''
+                link: '#celebHomesTour'
             }
     }
 ];
@@ -117,6 +117,7 @@ export const CelebrityHomesTourDetails = {
 
 export const SeasideTourDetailsText = {
     id: 0,
+    htmlId: 'stops',
     title: "Visit Venice Beach, Santa Monica Beach, and More",
     text: [
         {

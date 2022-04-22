@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState }  from 'react';
 
 const ContactForm = (props) => {
     let { formImg, formTitle, formData } = props.ContactUsFormData;
+
+    const [input, setInput] = useState({});
+    const handleInputChange = (e) => {
+        setInput({
+        ...input, [e.currentTarget.name]: e.currentTarget.value })
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Current state is: ' + JSON.stringify(input));
+        alert('You entered: ' + JSON.stringify(input));
+    };
+
     return (
         <div className="d-flex justify-content-center">
             <div className="container-fluid pl-0 pr-0 ml-0 mr-0">
@@ -26,20 +39,20 @@ const ContactForm = (props) => {
                             <div className="row form-group">
                                 <div className="col">
                                     <label htmlFor="first-name">{formData.firstName.input}</label>
-                                    <input id="first-name" type="text" className="form-control" placeholder={formData.firstName.placeholder}/>
+                                    <input id="first-name" type="text" className="form-control" placeholder={formData.firstName.placeholder} name="first-name" onChange={handleInputChange}/>
                                 </div>
                                 <div className="col">
                                     <label htmlFor="last-name">{formData.lastName.input}</label>
-                                    <input id="last-name" type="text" className="form-control" placeholder={formData.lastName.placeholder}/>
+                                    <input id="last-name" type="text" className="form-control" placeholder={formData.lastName.placeholder} name="last-name" onChange={handleInputChange}/>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleFormControlInput1">{formData.email.input}</label>
-                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={formData.email.placeholder}/>
+                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={formData.email.placeholder} name="email" onChange={handleInputChange}/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleFormControlSelect1">{formData.question.title}</label>
-                                <select className="form-control" id="exampleFormControlSelect1">
+                                <select className="form-control" id="exampleFormControlSelect1" name="question-type" onChange={handleInputChange}>
                                     {
                                     formData.question.selections.map(question => <SelectionItem key={question.id} optionText={question.optionText} />)
                                     }
@@ -47,9 +60,9 @@ const ContactForm = (props) => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleFormControlTextarea1">{formData.textBox.title}</label>
-                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="comment" onChange={handleInputChange}></textarea>
                             </div>
-                            <button className="btn btn-secondary" type="submit">{formData.submitButton.text}</button>
+                            <button className="btn btn-secondary" type="submit" onClick={handleSubmit}>{formData.submitButton.text}</button>
                         </form>
                     </div>
                 </div>

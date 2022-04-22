@@ -7,8 +7,6 @@ import CardsSmall from "../../components/CardsSmall";
 import TextSmallHeadingWithPara from "../../components/TextSmallHeadingWithPara";
 import BusBackground from "../../components/PreFooterBackground";
 import Table from '../../components/Table';
-import Footer from '../../components/Footer';
-// import './App.css';
 
 const SeasideTourHeader = () => {
     return (
@@ -50,7 +48,6 @@ function SeasideTour() {
             <SeasideTourDetails />
             <SeasideTourTable />
             <BusBackground/>
-            <Footer />
         </>
     );
 }

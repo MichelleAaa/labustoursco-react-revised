@@ -1,4 +1,6 @@
 import React from 'react';
+import { Scrollchor } from 'react-scrollchor';
+import BookingModal from './BookingModal';
 
 const CardsSmall = ({ tourCardsData }) => {
     return (
@@ -30,7 +32,12 @@ const SmallCard = ({ tourCardData }) => {
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-10">
                             <div className="card-link-bottom text-center">
-                                <a href={tourCardData.button.text} className="card-link">{tourCardData.button.text} &rarr;</a>
+                                {
+                                    tourCardData.id === 1 ? <BookingModal key={tourCardData.id} linkType={'text'} text={tourCardData.button.text}/> : <PageLink key={tourCardData.id} text={tourCardData.button.text} link={tourCardData.button.link} />
+                                }
+                                
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -43,6 +50,12 @@ const SmallCard = ({ tourCardData }) => {
 const ListItem = ({ listItemData }) => {
     return (
             <li className="list-group-item">{listItemData.text}</li>
+    );
+}
+
+const PageLink = ({ text, link }) => {
+    return (
+        <Scrollchor  to={link} className="card-link">{text} &rarr;</Scrollchor>
     );
 }
 

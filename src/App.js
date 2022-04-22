@@ -1,38 +1,36 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./utils/ScrollToTop";
 // import Nav from './components/Navbar';
 // import Header from './components/Header';
-import BookingModal from "./components/BookingModal";
-// import HeadingWithParagraphs from "./components/HeadingWithParagraphs";
-// import HomeThreePictures from './components/HomeThreePictures';
-// import CardDetails from './components/CardDetails';
-// import BusBackground from './components/BusBackground';
-// import Footer from './components/Footer';
-
-// import HomePage from './pages/home/HomePage';
-// import AboutUs from './pages/AboutUs.js';
-// import CityTour from './pages/CityTour.js';
-// import ContactUs from './pages/ContactUs.js';
-// import FAQ from './pages/FAQ.js';
-// import AboutUs from  './pages/aboutus/AboutUs';
-// import ContactUs from  './pages/contactus/ContactUs';
-// import HomePage from  './pages/home/HomePage';
+// import BookingModal from "./components/BookingModal";
+import Footer from './components/Footer';
+import HomePage from './pages/home/HomePage';
+import AboutUs from './pages/aboutus/AboutUs.js';
+import ContactUs from './pages/contactus/ContactUs.js';
+import FAQ from './pages/faq/FAQ.js';
 import CityTour from  './pages/citytour/CityTour';
-// import SeasideTour from  './pages/seasidetour/SeasideTour';
-// import BookingModal from  './components/BookingModal';
-import FAQ from  './pages/faq/FAQ';
-import TESTING from './TESTING';
-
+import SeasideTour from  './pages/seasidetour/SeasideTour';
 import './App.css';
-import './jQuery';
 
 function App() {
   return (
     <>
-      {/* <FAQ /> */}
-      <BookingModal />
-      {/* <SeasideTour /> */}
-      {/* <HomePage /> */}
-      {/* <CityTour /> */}
-      {/* <TESTING /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />}/>
+            <Route index element={<HomePage />} />
+            <Route path='aboutus' element={<AboutUs />} />
+            <Route exact path='citytour' element={<CityTour />}/>
+            <Route exact path='seasidetour' element={<SeasideTour />}/>
+            <Route path='contactus' element={<ContactUs />}/>
+            <Route path='faq' element={<FAQ />}/>
+            {/* <Route path='*' element={<Error />} /> */}
+          {/* </Route> */}
+        </Routes>
+        <ScrollToTop>
+          <Footer />
+        </ScrollToTop>
+      </BrowserRouter>
     </>
   );
 }

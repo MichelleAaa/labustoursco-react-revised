@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextHeadingWithPara = ({ textData }) => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id={textData.htmlId}>
             <div className="row d-flex justify-content-center">
                 <div className="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
                     <h1 className="display-4">{textData.title}</h1>

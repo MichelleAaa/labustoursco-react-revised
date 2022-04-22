@@ -5,7 +5,8 @@ import img2 from '../../assets/city-tour-card-palms.jpg';
 export const ContactUsTitle = {
     id: 0,
     title: 'Contact Us',
-    subtitle: 'We look forward to hearing from you!'
+    subtitle: 'We look forward to hearing from you!',
+    htmlId: "#home-card"
 }
 
 export const WelcomeText = {

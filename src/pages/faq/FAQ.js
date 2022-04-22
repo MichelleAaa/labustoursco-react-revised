@@ -5,8 +5,6 @@ import BookingModal from "../../components/BookingModal";
 import {FAQAccordionData} from './FAQList';
 import Accordion from '../../components/AlternatingAccordion';
 import BusBackground from '../../components/PreFooterBackground';
-import Footer from '../../components/Footer';
-// import './App.css';
 
 const FAQHeader = () => {
     return (
@@ -28,7 +26,6 @@ function FAQ() {
             {/* <BookingModal /> */}
             <FAQAccordion />
             <BusBackground/>
-            <Footer />
         </>
     );
 }

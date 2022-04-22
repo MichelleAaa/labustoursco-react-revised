@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Footer = () => {
@@ -10,12 +11,12 @@ const Footer = () => {
                             <div className="text-left">
                         <h5 className="footer-title pb-3">Links</h5>
                         <ul className="list-unstyled footer-item">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="citytour.html">City Tour</a></li>
-                            <li><a href="seasidetour.html">Seaside Tour</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to='/aboutus'>About</Link></li>
+                            <li><Link to='/citytour'>City Tour</Link></li>
+                            <li><Link to='/seasidetour'>Seaside Tour</Link></li>
+                            <li><Link to='/faq'>FAQ</Link></li>
+                            <li><Link to='/contactus'>Contact Us</Link></li>
                         </ul>
                     </div>
                     </div>
@@ -56,7 +57,7 @@ const Footer = () => {
                 </div>
                 <div className="row pl-0 ml-0 pb-1">
                     <div className="col-sm-12 pb-1 copyright">
-                        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+                        <p>&copy; Copyright &copy; {new Date().getFullYear()}. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

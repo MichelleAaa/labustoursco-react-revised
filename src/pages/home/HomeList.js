@@ -74,7 +74,7 @@ export const TourCardDetails = [
             },
         button2: {
             text: 'Learn More',
-                link: ''
+            link: '/citytour'
         }
     },
     {
@@ -102,7 +102,7 @@ export const TourCardDetails = [
             },
         button2: {
             text: 'Learn More',
-                link: ''
+                link: '/seasidetour'
         }
     }
 ];
