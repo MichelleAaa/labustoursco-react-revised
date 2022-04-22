@@ -15,8 +15,9 @@ import BookingModal from "./components/BookingModal";
 // import AboutUs from  './pages/aboutus/AboutUs';
 // import ContactUs from  './pages/contactus/ContactUs';
 // import HomePage from  './pages/home/HomePage';
-// import CityTour from  './pages/citytour/CityTour';
+import CityTour from  './pages/citytour/CityTour';
 // import SeasideTour from  './pages/seasidetour/SeasideTour';
+// import BookingModal from  './components/BookingModal';
 import FAQ from  './pages/faq/FAQ';
 import TESTING from './TESTING';
 
@@ -27,10 +28,11 @@ function App() {
   return (
     <>
       {/* <FAQ /> */}
+      <BookingModal />
       {/* <SeasideTour /> */}
       {/* <HomePage /> */}
       {/* <CityTour /> */}
-      <TESTING />
+      {/* <TESTING /> */}
     </>
   );
 }
