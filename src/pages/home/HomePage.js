@@ -6,7 +6,6 @@ import {HomeHeadingText, HomeAboutToursText, TourCardDetails} from './HomeList';
 import TextHeadingWithPara from "../../components/TextHeadingWithPara";
 import {ThreeImgData} from './HomeList';
 import ThreeImgGrid from "../../components/ThreeImgGrid";
-
 import CardsLarge from '../../components/CardsLarge';
 import PreFooterBackground from '../../components/PreFooterBackground';
 import ReviewCarousel from '../../components/ReviewCarousel';

@@ -18,16 +18,19 @@ import BookingModal from "./components/BookingModal";
 // import CityTour from  './pages/citytour/CityTour';
 // import SeasideTour from  './pages/seasidetour/SeasideTour';
 import FAQ from  './pages/faq/FAQ';
+import TESTING from './TESTING';
+
 import './App.css';
 import './jQuery';
 
 function App() {
   return (
     <>
-      <FAQ />
+      {/* <FAQ /> */}
       {/* <SeasideTour /> */}
       {/* <HomePage /> */}
       {/* <CityTour /> */}
+      <TESTING />
     </>
   );
 }
