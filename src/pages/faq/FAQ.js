@@ -1,7 +1,6 @@
 import Nav from '../../components/Navbar';
 import {FAQTitle} from './FAQList';
 import Header from '../../components/Header';
-import BookingModal from "../../components/BookingModal";
 import {FAQAccordionData} from './FAQList';
 import Accordion from '../../components/AlternatingAccordion';
 import BusBackground from '../../components/PreFooterBackground';
@@ -23,9 +22,10 @@ function FAQ() {
         <>
             <Nav />
             <FAQHeader />
-            {/* <BookingModal /> */}
-            <FAQAccordion />
-            <BusBackground/>
+            <main>
+                <FAQAccordion />
+            </main>
+                <BusBackground/>
         </>
     );
 }

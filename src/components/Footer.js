@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col-5 col-md-4">
                         <div className="d-flex justify-content-start">
                             <div className="text-left">
-                        <h5 className="footer-title pb-3">Links</h5>
+                        <h2 className="footer-title pb-3">Links</h2>
                         <ul className="list-unstyled footer-item">
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/aboutus'>About</Link></li>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="col-7 col-sm-5 pl-0 ml-0 pr-3">
                         <div className="d-flex justify-content-end">
                             <div className="text-right">
-                                <h5 className="footer-title pb-3">Our Location:</h5>
+                                <h2 className="footer-title pb-3">Our Location:</h2>
                                 <p className="footer-item">123 Beyond St., Ste 456, </p>
                                 <p className="footer-item p-1">Beverly Hills, CA 90210</p>
                                 <br/>

@@ -44,10 +44,10 @@ const CarouselSliders = ({ reviewData }) => {
 
 const Review = ({ reviewData }) => {
     return (  
-        <div className={reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
+        <article className={reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
             <div className="d-block">
                 <div className="m-0 m-md-1 mb-3 pt-0">
-                    <h2 className="pt-0 testimonial-heading pb-lg-4 ">{reviewData.heading}</h2>
+                    <h6 className="pt-0 testimonial-heading pb-lg-4 ">{reviewData.heading}</h6>
                     <div className="p-1">
                         <p>My rating:</p>
                     </div>
@@ -60,7 +60,7 @@ const Review = ({ reviewData }) => {
                     <i>{reviewData.name} from {reviewData.location}</i>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }
 

@@ -1,7 +1,6 @@
 import Nav from '../../components/Navbar';
 import {AboutTitle} from './AboutList';
 import Header from '../../components/Header';
-import BookingModal from "../../components/BookingModal";
 import MediaImgTitleText from '../../components/MediaImgTitleText';
 import {AboutData} from './AboutList';
 import BusBackground from '../../components/PreFooterBackground';
@@ -23,7 +22,6 @@ function AboutUs() {
     <>
       <Nav />
       <AboutUsHeader />
-      {/* <BookingModal /> */}
       <AboutPageMedia />
       <BusBackground/>
     </>

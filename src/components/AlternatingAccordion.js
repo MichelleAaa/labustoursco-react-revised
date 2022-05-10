@@ -29,7 +29,7 @@ const AccordionItemLeft = ({ accordionInfo }) => {
             <>
                 <div className="row">
                     <div className="col mb-0 pb-0">
-                        <h3 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h3>
+                        <h2 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h2>
                     </div>
                 </div>
                 <div className="row mb-5 mt-3 d-flex justify-content-center align-items-center">
@@ -57,10 +57,10 @@ const AccordionInnerContent = ({ accordionContent }) => {
                 return (
                     <div key={item.id} className="card faq-card">
                         <div role="tab" className="card-header">
-                            <h4>
+                            <h3>
                                 <a data-toggle="collapse" data-target={"#q" + item.id}>
                                     {item.title}</a>
-                            </h4>
+                            </h3>
                             <div className="collapse" id={"q" + item.id} data-parent={"#accordion" + accordionContent.id}>
                                 <div className="card-body">
                                     <p className="">{item.text}</p>
@@ -79,7 +79,7 @@ const AccordionItemRight = ({ accordionInfo }) => {
         <>
             <div className="row">
                 <div className="col mb-0 pb-0">
-                    <h3 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h3>
+                    <h2 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h2>
                 </div>
             </div>
             <div className="row mb-5 mt-3 d-flex justify-content-center align-items-center">

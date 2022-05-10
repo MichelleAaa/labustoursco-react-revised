@@ -1,7 +1,6 @@
 import Nav from '../../components/Navbar';
 import {CityTourTitle, CityTourHeadingText, CityTourCardDetails, CelebrityHomesTourDetails, CityTourDetailsText, CityTourPricingDetails} from './CityTourList';
 import Header from '../../components/Header';
-import BookingModal from "../../components/BookingModal";
 import TextHeadingWithPara from "../../components/TextHeadingWithPara";
 import CardsSmall from "../../components/CardsSmall";
 import TextSmallHeadingWithPara from "../../components/TextSmallHeadingWithPara";
@@ -42,7 +41,6 @@ function CityTour() {
       <Nav />
       <CityTourHeader />
       <CityTourHeading />
-      {/* <BookingModal /> */}
       <CityTourCards />
       <CelebrityTourDetails />
       <CityTourDetails />

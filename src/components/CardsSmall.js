@@ -20,7 +20,7 @@ const SmallCard = ({ tourCardData }) => {
             <div className="card card-tour">
                 <img src={tourCardData.img} alt="" className="img-fluid card-img-tour"/>
                 <div className="card-body">
-                    <h5 className="card-title">{tourCardData.title}</h5>
+                    <h3 className="card-title">{tourCardData.title}</h3>
                     <p className="card-text">{tourCardData.subtext}.</p>
                 </div>
                 <ul className="list-group list-group-flush">
@@ -35,9 +35,6 @@ const SmallCard = ({ tourCardData }) => {
                                 {
                                     tourCardData.id === 1 ? <BookingModal key={tourCardData.id} linkType={'text'} text={tourCardData.button.text}/> : <PageLink key={tourCardData.id} text={tourCardData.button.text} link={tourCardData.button.link} />
                                 }
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>

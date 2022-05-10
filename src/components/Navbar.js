@@ -5,11 +5,11 @@ import '../utils/NavbarModification';
 
 const Nav = () => {
     return (
-        <div className="container-fluid">
+        <nav className="container-fluid">
             <div className="sticky-top">
                 <div className="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
                     <div className="col-12 d-flex justify-content-end">
-                        <nav className="navbar navbar-expand-lg navbar-light pt-0">
+                        <div className="navbar navbar-expand-lg navbar-light pt-0">
                             <Link to='/' className="navbar-brand align-self-start"><img src={logo} alt="" height="60" width="60" /></Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,11 +49,11 @@ const Nav = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }
 

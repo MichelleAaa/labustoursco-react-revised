@@ -562,7 +562,7 @@ input[type=checkbox]:checked+label {
   padding: 10px;
 }
 
-.home-about>h1 {
+.home-about> h2 {
   padding: 10px;
   font-weight: bold;
 }
@@ -701,7 +701,7 @@ input[type=checkbox]:checked+label {
     font-size: 1.7rem;
   }
 
-  .celebrity-homes>h1 {
+  .celebrity-homes>h2 {
     font-size: 3rem;
   }
 }
@@ -713,7 +713,7 @@ input[type=checkbox]:checked+label {
     padding: 10px;
   }
 
-  .celebrity-homes>h1 {
+  .celebrity-homes>h2 {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
@@ -1026,16 +1026,16 @@ thead {
   background-color: rgba(94, 91, 89, 0.06);
 }
 
-.faq-card .card-header h4 *,
-.faq-card-2 .card-header h4 * {
+.faq-card .card-header h3 *,
+.faq-card-2 .card-header h3 * {
   color: #565656;
   font-size: 1.3rem;
   font-family: sans-serif;
   text-decoration: none;
 }
 
-.faq-card .card-header h4 *:hover,
-.faq-card-2 .card-header h4 *:hover {
+.faq-card .card-header h3 *:hover,
+.faq-card-2 .card-header h3 *:hover {
   color: rgba(227, 39, 39, 0.7);
   transition: .1s ease-in-out;
 }
