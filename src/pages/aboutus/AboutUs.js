@@ -20,7 +20,7 @@ const AboutPageMedia = () => {
 function AboutUs() {
   return (
     <>
-      <Nav />
+      <Nav page={'aboutus'} />
       <AboutUsHeader />
       <AboutPageMedia />
       <BusBackground/>

@@ -20,7 +20,7 @@ const FAQAccordion = () => {
 function FAQ() {
     return (
         <>
-            <Nav />
+            <Nav page={'faq'} />
             <FAQHeader />
             <main>
                 <FAQAccordion />

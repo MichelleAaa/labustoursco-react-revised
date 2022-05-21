@@ -26,7 +26,7 @@ const ContactUsForm = () => {
 function ContactUs() {
     return (
             <>
-                <Nav />
+                <Nav page={'contactus'} />
                 <ContactUsHeader />
                 {/* <BookingModal /> */}
                 <WelcomeHeading />

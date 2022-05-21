@@ -30,7 +30,7 @@ const BookingModal = ( {linkType, text} ) => {
                                 <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
                                 <div class="col">
                                     <input type="number" class="form-control form-control-sm" id="num-passengers"
-                                    placeholder="" name="numPassengers" onChange={handleInputChange}/>
+                                    name="numPassengers" onChange={handleInputChange}/>
                                 </div>
                             </div>
                             <div class="row form-group">

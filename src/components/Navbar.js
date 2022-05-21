@@ -3,11 +3,11 @@ import React from 'react';
 import logo from '../assets/l.a.bustourslogocropped.png';
 import '../utils/NavbarModification';
 
-const Nav = () => {
+const Nav = (props) => {
     return (
         <nav className="container-fluid">
-            <div className="sticky-top">
-                <div className="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+            <div className='sticky-top'>
+                <div className="row sticky-nav p-auto d-flex justify-content-center" id="sticky-nav">
                     <div className="col-12 d-flex justify-content-end">
                         <div className="navbar navbar-expand-lg navbar-light pt-0">
                             <Link to='/' className="navbar-brand align-self-start"><img src={logo} alt="" height="60" width="60" /></Link>
@@ -18,11 +18,11 @@ const Nav = () => {
                             </button>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav mr-auto">
-                                    <li className="nav-item active">
-                                        <Link to='/' className="nav-link">Home <span className="sr-only">(current)</span></Link>
+                                    <li className="nav-item">
+                                        <Link to='/' className={props.page === 'homepage' ? "nav-link active" : "nav-link"}>Home <span className="sr-only">(current)</span></Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to='/aboutus'className="nav-link">About Us</Link>
+                                        <Link to='/aboutus'className={props.page === 'aboutus' ? "nav-link active" : "nav-link"}>About Us</Link>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -36,16 +36,16 @@ const Nav = () => {
                                         </div>
                                     </li>
                                     <li className="nav-item d-none">
-                                        <Link to='/citytour' className="nav-link">City Tour</Link>
+                                        <Link to='/citytour' className={props.page === 'citytour' ? "nav-link active" : "nav-link"}>City Tour</Link>
                                     </li>
                                     <li className="nav-item d-none">
-                                        <Link to='/seasidetour' className="nav-link"> Seaside Tour</Link>
+                                        <Link to='/seasidetour' className={props.page === 'seasidetour' ? "nav-link active" : "nav-link"}> Seaside Tour</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to='/faq' className="nav-link">FAQ</Link>
+                                        <Link to='/faq' className={props.page === 'faq' ? "nav-link active" : "nav-link"}>FAQ</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to='/contactus' className="nav-link"> Contact Us</Link>
+                                        <Link to='/contactus' className={props.page === 'contactus' ? "nav-link active" : "nav-link"}> Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

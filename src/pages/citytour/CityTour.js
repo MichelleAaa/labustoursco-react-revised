@@ -38,7 +38,7 @@ const CityTourTable = () => {
 function CityTour() {
   return (
     <>
-      <Nav />
+      <Nav page={'citytour'} />
       <CityTourHeader />
       <CityTourHeading />
       <CityTourCards />

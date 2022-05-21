@@ -118,7 +118,7 @@ export const ReviewCarouselData = [
     },
     {
         id: 1,
-        heading: 'A Trip to Never Forget',
+        heading: 'Unforgettable',
         stars: 5,
         text: 'The kids had a great time. My only regret is that the time went by too fast.',
         name: 'Justin',

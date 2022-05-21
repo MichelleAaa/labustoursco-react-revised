@@ -7,6 +7,7 @@ const Table = ({ pricingTableData }) => {
             <div className="row d-flex justify-content-center">
                 <div className="col-11 col-sm-9 col-lg-6 px-0">
                     <table className="table table-hover text-center">
+                        <caption>Table displaying price of tours based on number of passengers.</caption>
                         <thead>
                             <tr>
                                 {pricingTableData.headings.map(heading => <THead key={heading.id} headingData={heading}/>)}

@@ -29,7 +29,7 @@ const AccordionItemLeft = ({ accordionInfo }) => {
             <>
                 <div className="row">
                     <div className="col mb-0 pb-0">
-                        <h2 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h2>
+                        <h2 className="mb-3 section-text section-heading text-center">{accordionInfo.title}</h2>
                     </div>
                 </div>
                 <div className="row mb-5 mt-3 d-flex justify-content-center align-items-center">
@@ -39,7 +39,7 @@ const AccordionItemLeft = ({ accordionInfo }) => {
                             alt="Breadcrumb Trail" />
                         </div>
                     </div>
-                    <div className="col-10 col-sm-11 col-md-7 about-text">
+                    <div className="col-10 col-sm-11 col-md-7 section-text">
                         <div className="faq-accordion-size">
                             <div className="accordion" id={"accordion" + accordionInfo.id}>
                                 <AccordionInnerContent key={accordionInfo.id} accordionContent={accordionInfo} val={accordionInfo.id}/>
@@ -63,7 +63,7 @@ const AccordionInnerContent = ({ accordionContent }) => {
                             </h3>
                             <div className="collapse" id={"q" + item.id} data-parent={"#accordion" + accordionContent.id}>
                                 <div className="card-body">
-                                    <p className="">{item.text}</p>
+                                    <p>{item.text}</p>
                                 </div>
                             </div>
                         </div>
@@ -79,11 +79,11 @@ const AccordionItemRight = ({ accordionInfo }) => {
         <>
             <div className="row">
                 <div className="col mb-0 pb-0">
-                    <h2 className="mb-3 about-text about-heading-text text-center">{accordionInfo.title}</h2>
+                    <h2 className="mb-3 section-text section-heading text-center">{accordionInfo.title}</h2>
                 </div>
             </div>
             <div className="row mb-5 mt-3 d-flex justify-content-center align-items-center">
-                <div className="col-10 col-sm-11 col-md-7 about-text">
+                <div className="col-10 col-sm-11 col-md-7 section-text">
                     <div className="faq-accordion-size">
                         <div className="accordion" id={"accordion" + accordionInfo.id}>
                             <AccordionInnerContent key={accordionInfo.id} accordionContent={accordionInfo} val={accordionInfo.id}/>

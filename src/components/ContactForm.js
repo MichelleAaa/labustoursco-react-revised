@@ -33,8 +33,8 @@ const ContactForm = (props) => {
                             </div>
                         </div>               
                     </div>
-                    <div className="col-10 col-sm-9 col-md-7 col-lg-5 about-text p-3 contactus-form">
-                        <h3 className="mb-3 about-text about-heading-text text-center">{formTitle}</h3>
+                    <div className="col-10 col-sm-9 col-md-7 col-lg-5 section-text p-3 contactus-form">
+                        <h3 className="mb-3 section-text section-heading text-center">{formTitle}</h3>
                         <form>
                             <div className="row form-group">
                                 <div className="col">
@@ -47,20 +47,20 @@ const ContactForm = (props) => {
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="exampleFormControlInput1">{formData.email.input}</label>
-                                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={formData.email.placeholder} name="email" onChange={handleInputChange}/>
+                                <label htmlFor="contact-email">{formData.email.input}</label>
+                                <input type="email" className="form-control" id="contact-email" placeholder={formData.email.placeholder} name="email" onChange={handleInputChange}/>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="exampleFormControlSelect1">{formData.question.title}</label>
-                                <select className="form-control" id="exampleFormControlSelect1" name="question-type" onChange={handleInputChange}>
+                                <label htmlFor="contact-selection">{formData.question.title}</label>
+                                <select className="form-control" id="contact-selection" name="question-type" onChange={handleInputChange}>
                                     {
                                     formData.question.selections.map(question => <SelectionItem key={question.id} optionText={question.optionText} />)
                                     }
                                 </select>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">{formData.textBox.title}</label>
-                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="comment" onChange={handleInputChange}></textarea>
+                                <label htmlFor="contact-form">{formData.textBox.title}</label>
+                                <textarea className="form-control" id="contact-form" rows="3" name="comment" onChange={handleInputChange}></textarea>
                             </div>
                             <button className="btn btn-secondary" type="submit" onClick={handleSubmit}>{formData.submitButton.text}</button>
                         </form>

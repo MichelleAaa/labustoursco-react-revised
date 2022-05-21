@@ -42,7 +42,7 @@ const AboutTourCards = () => {
 function HomePage() {
   return (
     <>
-      <Nav />
+      <Nav page={'homepage'} />
       <HomePageHeader />
       <WelcomeHeading />
       {/* <BookingModal /> */}

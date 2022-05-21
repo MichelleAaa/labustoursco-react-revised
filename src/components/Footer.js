@@ -6,9 +6,7 @@ const Footer = () => {
         <footer className="site-footer d-block">
             <div className="container-fluid">
                 <div className="row px-0 pt-4 d-flex justify-content-center mx-0">
-                    <div className="col-5 col-md-4">
-                        <div className="d-flex justify-content-start">
-                            <div className="text-left">
+                    <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
                         <h2 className="footer-title pb-3">Links</h2>
                         <ul className="list-unstyled footer-item">
                             <li><Link to='/'>Home</Link></li>
@@ -18,8 +16,6 @@ const Footer = () => {
                             <li><Link to='/faq'>FAQ</Link></li>
                             <li><Link to='/contactus'>Contact Us</Link></li>
                         </ul>
-                    </div>
-                    </div>
                     </div>
                     <div className="col-7 col-sm-5 pl-0 ml-0 pr-3">
                         <div className="d-flex justify-content-end">
@@ -40,7 +36,7 @@ const Footer = () => {
                 </div>
                 <div className="row d-flex justify-content-center">
                     <div className="col-7">
-                        <hr className=""/>
+                        <hr />
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center">

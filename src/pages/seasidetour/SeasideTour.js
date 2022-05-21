@@ -39,7 +39,7 @@ const SeasideTourTable = () => {
 function SeasideTour() {
     return (
         <>
-            <Nav />
+            <Nav page={'seasidetour'} />
             <SeasideTourHeader />
             <SeasideTourHeading />
             {/* <BookingModal /> */}
