@@ -9,5 +9,4 @@ const PreFooterBackground = (props) => {
     );
 }
 
-
 export default PreFooterBackground;

@@ -3,19 +3,14 @@ import { Link } from 'react-router-dom';
 import BookingModal from './BookingModal';
 
 const CardsLarge = ({ cardsData }) => {
-    return (
-        <div className="container-fluid">
-            <div className="row d-flex justify-content-center py-5">
-                {
-                    cardsData.map(card => <LargeCard key={card.id} CardData={card}/>)
-                }
-            </div>
-        </div>
-    );
-}
+    const LargeCard = ({ CardData }) => {
+        const ListItem = ({ listItemData }) => {
+            return (
+                <li className="list-group-item">{listItemData.text}</li>
+            );
+        };
 
-const LargeCard = ({ CardData }) => {
-    return(
+        return(
             <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
                 <div className="card home-card mb-5">
                     <img src={CardData.img} alt="" className="img-fluid card-img" />
@@ -32,7 +27,6 @@ const LargeCard = ({ CardData }) => {
                         <div className="row d-flex justify-content-center align-items-center">
                             <div className="col-5">
                                 <div className="card-link-bottom">
-                                    {/* <a href={CardData.button1.link} className="card-link" data-toggle="modal" data-target="#bookingModal">{CardData.button1.text}</a> */}
                                     <BookingModal linkType={'text'} text={CardData.button1.text}/>
                                 </div>
                             </div>
@@ -45,14 +39,16 @@ const LargeCard = ({ CardData }) => {
                     </div>
                 </div>
             </div>
-    );
-}
+        );
+    }
 
-const ListItem = ({ listItemData }) => {
     return (
-            <li className="list-group-item">{listItemData.text}</li>
+        <div className="container-fluid">
+            <div className="row d-flex justify-content-center py-5">
+                {cardsData.map(card => <LargeCard key={card.id} CardData={card}/>)}
+            </div>
+        </div>
     );
 }
 
 export default CardsLarge;
-

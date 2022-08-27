@@ -1,4 +1,3 @@
-import React from 'react';
 import imgGrid1 from '../../assets/card-city.jpg';
 import imgGrid2 from '../../assets/hollywoodpalm.jpg';
 import imgGrid3 from '../../assets/santamonicacropped.png';

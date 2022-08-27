@@ -2,7 +2,7 @@ import React from 'react';
 
 const Accordion = ({ accordionData }) => {
     return (
-        <>
+        <React.Fragment>
             <div className="d-flex justify-content-center">
                 <div className="container pl-0 pr-0 ml-0 mr-0">
                     {
@@ -20,13 +20,13 @@ const Accordion = ({ accordionData }) => {
                 }
                 </div>
             </div>
-        </>
+        </React.Fragment>
     );
 }
 
 const AccordionItemLeft = ({ accordionInfo }) => {
     return (
-            <>
+            <React.Fragment>
                 <div className="row">
                     <div className="col mb-0 pb-0">
                         <h2 className="mb-3 section-text section-heading text-center">{accordionInfo.title}</h2>
@@ -47,7 +47,7 @@ const AccordionItemLeft = ({ accordionInfo }) => {
                         </div>
                     </div>
                 </div>
-            </>
+            </React.Fragment>
     );
 }
 
@@ -76,7 +76,7 @@ const AccordionInnerContent = ({ accordionContent }) => {
 
 const AccordionItemRight = ({ accordionInfo }) => {
     return (
-        <>
+        <React.Fragment>
             <div className="row">
                 <div className="col mb-0 pb-0">
                     <h2 className="mb-3 section-text section-heading text-center">{accordionInfo.title}</h2>
@@ -96,7 +96,7 @@ const AccordionItemRight = ({ accordionInfo }) => {
                     </div>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     );
 }
 

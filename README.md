@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+## L.A. Bus Tours Co.
+
+A React application for a bus tour company. Built with React, Reactstrap, React-Router-Dom, Bootstrap, CSS, and jQuery.
+
+## Project Screen Shots 
+
+
+
+Home Page Jumbotron
+
+![Home Page Jumbotron](src/img-readme/bus-home-jumbotron.jpeg "The home page displays a jumbotron with introductory information.")
+
+The home page displays a jumbotron with introductory information.
+
+
+
+Home Page Review Carousel
+
+![Home Page Review Carousel](src/img-readme/bus-home-review-carousel.jpeg "There's a review carousel that automatically switches slides. Alternatively, it can manually be changed by clicking on the arrows to the left or right of the review.")
+
+There's a review carousel that automatically switches slides. Alternatively, it can manually be changed by clicking on the arrows to the left or right of the review.
+
+
+
+Bus Tour Detail Cards
+
+![Bus Tour Detail Cards](src/img-readme/bus-tour-cards.jpeg "The two tour pages display bootstrapped cards outlining some of the trip details.")
+
+The two tour pages display bootstrapped cards outlining some of the trip details.
+
+
+
+F.A.Q Accordions
+
+![F.A.Q Accordions](src/img-readme/bus-faq-accordions.jpeg "Bootstrap accordions are used to display frequently asked questions.")
+
+Bootstrap accordions are used to display frequently asked questions.
+
+
+
+Contact Form
+
+![Contact Form](src/img-readme/bus-form.jpeg "The Contact page displays a form for visitors to send a message.")
+
+The Contact page displays a form for visitors to send a message.
+
+
+
+## Installation and Setup Instructions
+
+Clone this repository. You will need `yarn` installed on your machine.  
+
+Installation:
+
+`yarn install`   
+
+To Start Server:
+
+`yarn start`  
+
+To Visit App (assuming you have no other application running on port 3000):
+
+`localhost:3000/`  
+
+## Reflection 
+
+This project was built primarily while I was studying in the Nucamp Full Stack Web and Mobile Application Development Bootcamp, during the React course. Initially I built this website during the Bootstrap course as an HTML-based website. In the React course, it was advised for us to convert our projects into React so we could focus on learning how to work with components and JSX.
+
+While implementing this project I ran into several challenges. One of the challenges was learning how data flows through components (aka through props) and how to use hooks. Another challenge was finding that some of the bootstrap code broke on conversion, so I added in Reactstrap to get the model component to work. Additionally, the lack of being able to use internal page links took some time to resolve, and ultimately ended in the installation of react-scrollchor to fix the problem. Overall, this project was a great learning experience.
+
+## References:
+
+-Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann - https://www.udemy.com/course/advanced-css-and-sass/ (Natours project - For the clip-path in the jumbotron and inspiration for the UI design.)
+-w3schools.com 
+
+# Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,4 +1,3 @@
-import React from 'react';
 import img1 from '../../assets/city-tour-card-beverlyhills.jpg';
 import img2 from '../../assets/city-tour-card-palms.jpg';
 
@@ -7,7 +6,7 @@ export const ContactUsTitle = {
     title: 'Contact Us',
     subtitle: 'We look forward to hearing from you!',
     htmlId: "#home-card"
-}
+};
 
 export const WelcomeText = {
     id: 0,
@@ -18,7 +17,7 @@ export const WelcomeText = {
             text: "We are always open to answering your questions and receiving your feedback. Please don't hesitate to contact us using the form below."
         }
     ]
-}
+};
 
 export const ContactUsFormData = {
     formImg: [img1, img2],
@@ -41,7 +40,7 @@ export const ContactUsFormData = {
             selections: [
                     {
                         id: 0,
-                        optionText: 'Select an option Below'
+                        optionText: 'Select an option below'
                     },
                     {
                         id: 1,
@@ -76,5 +75,5 @@ export const ContactUsFormData = {
                 text: "Submit"
             }
         }
-    }
+    };
 

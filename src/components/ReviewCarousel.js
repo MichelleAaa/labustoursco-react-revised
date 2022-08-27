@@ -2,6 +2,44 @@ import React from 'react';
 import {ReviewCarouselData} from '../pages/home/HomeList';
 
 const ReviewCarousel = () => {
+    const CarouselSliders = ({ reviewData }) => {
+        if(reviewData.id === 0) {
+            return <li data-target="#carousel-reviews" data-slide-to="0"></li>;
+        }else {
+            return <li data-target="#carousel-reviews" data-slide-to={reviewData.id}></li>;
+        }
+    }
+
+    const Review = ({ reviewData }) => {
+        const ReviewStars = ({ stars }) => {  
+            let starsArr = Array.from(Array(stars).keys());
+
+            return (
+                starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)
+            );
+        }
+        
+        return (  
+            <article className={reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
+                <div className="d-block">
+                    <div className="m-0 m-md-1 mb-3 pt-0">
+                        <h6 className="pt-1 testimonial-heading pb-lg-4 ">{reviewData.heading}</h6>
+                        <div className="p-1">
+                            <p>My rating:</p>
+                        </div>
+                        <div className="star p-1">
+                            <ReviewStars stars={reviewData.stars}/>
+                        </div>
+                        <p className="p-1">{reviewData.text}</p>
+                    </div>
+                    <div className="p-1 pt-3">
+                        <i>{reviewData.name} from {reviewData.location}</i>
+                    </div>
+                </div>
+            </article>
+        );
+    }
+
     return (
         <section className="container-fluid">
             <div className="row carousel-box text-center p-0 p-lg-5 d-flex justify-content-center align-items-center vh-100">
@@ -29,44 +67,6 @@ const ReviewCarousel = () => {
                 </div>
             </div>
         </section>
-    );
-}
-
-const CarouselSliders = ({ reviewData }) => {
-    if(reviewData.id === 0) {
-        return <li data-target="#carousel-reviews" data-slide-to="0"></li>;
-    }else {
-        return <li data-target="#carousel-reviews" data-slide-to={reviewData.id}></li>;
-    }
-}
-
-const Review = ({ reviewData }) => {
-    return (  
-        <article className={reviewData.id === 0 ? 'carousel-item active' : 'carousel-item'}>
-            <div className="d-block">
-                <div className="m-0 m-md-1 mb-3 pt-0">
-                    <h6 className="pt-1 testimonial-heading pb-lg-4 ">{reviewData.heading}</h6>
-                    <div className="p-1">
-                        <p>My rating:</p>
-                    </div>
-                    <div className="star p-1">
-                        <ReviewStars stars={reviewData.stars}/>
-                    </div>
-                    <p className="p-1">{reviewData.text}</p>
-                </div>
-                <div className="p-1 pt-3">
-                    <i>{reviewData.name} from {reviewData.location}</i>
-                </div>
-            </div>
-        </article>
-    );
-}
-
-const ReviewStars = ({ stars }) => {  
-    let starsArr = Array.from(Array(stars).keys());
-
-    return (
-        starsArr.map(star => <i key={star} className="fa fa-star" aria-hidden="true"></i>)
     );
 }
 

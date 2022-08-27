@@ -15,6 +15,12 @@ const ContactForm = (props) => {
         alert('You entered: ' + JSON.stringify(input));
     };
 
+    const SelectionItem = ({ optionText }) => {
+        return(
+            <option>{optionText}</option>
+        );
+    }
+
     return (
         <div className="d-flex justify-content-center">
             <div className="container-fluid pl-0 pr-0 ml-0 mr-0">
@@ -68,12 +74,6 @@ const ContactForm = (props) => {
                 </div>
             </div>
         </div>
-    );
-}
-
-const SelectionItem = ({ optionText }) => {
-    return(
-        <option>{optionText}</option>
     );
 }
 

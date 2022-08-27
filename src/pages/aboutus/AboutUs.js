@@ -4,27 +4,16 @@ import Header from '../../components/Header';
 import MediaImgTitleText from '../../components/MediaImgTitleText';
 import {AboutData} from './AboutList';
 import BusBackground from '../../components/PreFooterBackground';
-
-const AboutUsHeader = () => {
-    return (
-        <Header key={AboutTitle.id} headerData={AboutTitle}/>
-    );
-}
-
-const AboutPageMedia = () => {
-    return (
-        <MediaImgTitleText data={AboutData} />
-    );
-}
+import React from 'react';
 
 function AboutUs() {
   return (
-    <>
+    <React.Fragment>
       <Nav page={'aboutus'} />
-      <AboutUsHeader />
-      <AboutPageMedia />
+      <Header key={AboutTitle.id} headerData={AboutTitle}/>
+      <MediaImgTitleText data={AboutData} />
       <BusBackground/>
-    </>
+    </React.Fragment>
   );
 }
 

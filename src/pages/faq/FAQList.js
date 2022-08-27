@@ -1,4 +1,3 @@
-import React from 'react';
 import img0 from '../../assets/venice-beach-sand.jpg';
 import img1 from '../../assets/downtownla.jpg';
 import img2 from '../../assets/card-seaside.jpg';
@@ -7,7 +6,7 @@ export const FAQTitle = {
     id: 0,
     title: 'F.A.Q.',
     subtitle: 'Questions and Answers'
-}
+};
 
 export const FAQAccordionData = [
     {
@@ -76,4 +75,4 @@ export const FAQAccordionData = [
             }
         ]
     }
-]
+];

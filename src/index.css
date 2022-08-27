@@ -1062,3 +1062,7 @@ form {
   transform: scale(1.3);
   filter: opacity(100%);
 }
+
+.error {
+  height: 65vh;
+}

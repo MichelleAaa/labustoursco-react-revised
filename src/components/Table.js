@@ -2,6 +2,18 @@ import React from 'react';
 import BookingModal from './BookingModal';
 
 const Table = ({ pricingTableData }) => {
+    const THead = ({ headingData }) => {
+        return (
+            <th scope="col">{headingData.title}</th>
+        );
+    }
+
+    const TRow = ({ cellsData }) => {
+        return (
+            cellsData.map(cell => cell.id === 0 ? <th key={cell.id} scope="row">{cell.title}</th> : <td key={cell.id}>{cell.title}</td> )
+        );
+    }
+
     return (
         <div className="container-fluid pt-5">
             <div className="row d-flex justify-content-center">
@@ -16,7 +28,6 @@ const Table = ({ pricingTableData }) => {
                         <tbody>
                                 {pricingTableData.rowData.map(row => {
                                     return ( 
-
                                         <tr key={row.id}>
                                             <TRow cellsData={row.cells}/>
                                         </tr>
@@ -32,18 +43,6 @@ const Table = ({ pricingTableData }) => {
                 </div>
             </div>
         </div>
-    );
-}
-
-const THead = ({ headingData }) => {
-    return (
-        <th scope="col">{headingData.title}</th>
-    );
-}
-
-const TRow = ({ cellsData }) => {
-    return (
-        cellsData.map(cell => cell.id === 0 ? <th key={cell.id} scope="row">{cell.title}</th> : <td key={cell.id}>{cell.title}</td> )
     );
 }
 

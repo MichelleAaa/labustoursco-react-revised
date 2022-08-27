@@ -1,4 +1,3 @@
-import React from 'react';
 import imgTourCard1 from '../../assets/beach-trip.jpg';
 import imgTourCard2 from '../../assets/venice-beach-skating.jpg';
 import imgTourCard3 from '../../assets/hollywood-brush.jpg';
@@ -196,4 +195,4 @@ export const SeasideTourPricingDetails = {
             ]
         }
     ]
-}
+};

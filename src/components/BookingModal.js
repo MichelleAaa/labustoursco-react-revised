@@ -2,7 +2,6 @@ import React, { useState }  from 'react';
 import {  Modal, ModalHeader, ModalBody  } from 'reactstrap';
 
 const BookingModal = ( {linkType, text} ) => {
-
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
@@ -16,6 +15,18 @@ const BookingModal = ( {linkType, text} ) => {
         e.preventDefault();
         console.log('Current state is: ' + JSON.stringify(input));
         alert('You entered: ' + JSON.stringify(input));
+    };
+
+    const ButtonType = ({text, toggle}) => {
+        return(
+            <button type="button" className="btn px-3 py-1 btn-secondary btn-main btn-text text-nowrap text-center" onClick={toggle}>{text} &rarr;</button>
+        );
+    };
+
+    const TextType = ({text, toggle}) => {
+        return (
+            <a className="card-link" onClick={toggle}>{text} &rarr;</a>
+        );
     };
 
     return (
@@ -77,17 +88,4 @@ const BookingModal = ( {linkType, text} ) => {
     );
 }
 
-const ButtonType = ({text, toggle}) => {
-    return(
-        <button type="button" className="btn px-3 py-1 btn-secondary btn-main btn-text text-nowrap text-center" onClick={toggle}>{text} &rarr;</button>
-    );
-}
-
-const TextType = ({text, toggle}) => {
-    return (
-        <a className="card-link" onClick={toggle}>{text} &rarr;</a>
-    );
-}
-
 export default BookingModal;
-

@@ -1,4 +1,3 @@
-import React from 'react';
 import imgTourCard1 from '../../assets/city-tour-card-beverly-hills.jpg';
 import imgTourCard2 from '../../assets/citytourbanner.jpg';
 import imgTourCard3 from '../../assets/city-tour-card-palms.jpg';
@@ -114,7 +113,6 @@ export const CelebrityHomesTourDetails = {
     ]
 };
 
-
 export const CityTourDetailsText = {
     id: 0,
     htmlId: 'stops',
@@ -196,4 +194,4 @@ export const CityTourPricingDetails = {
             ]
         }
     ]
-}
+};

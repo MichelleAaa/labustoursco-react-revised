@@ -6,47 +6,20 @@ import CardsSmall from "../../components/CardsSmall";
 import TextSmallHeadingWithPara from "../../components/TextSmallHeadingWithPara";
 import BusBackground from "../../components/PreFooterBackground";
 import Table from '../../components/Table';
-
-const CityTourHeader = () => {
-    return (
-        <Header key={CityTourTitle.id} headerData={CityTourTitle}/>
-    );
-}
-
-const CityTourHeading = () => {
-    return <TextHeadingWithPara textData={CityTourHeadingText}/>
-}
-
-const CityTourCards = () => {
-  return(
-    <CardsSmall tourCardsData={CityTourCardDetails}/>
-  );
-}
-
-const CelebrityTourDetails = () => {
-    return <TextSmallHeadingWithPara textData={CelebrityHomesTourDetails}/>
-}
-
-const CityTourDetails = () => {
-    return <TextHeadingWithPara textData={CityTourDetailsText}/>
-}
-
-const CityTourTable = () => {
-    return <Table key={CityTourPricingDetails.id} pricingTableData={CityTourPricingDetails}/>
-}
+import React from 'react';
 
 function CityTour() {
   return (
-    <>
+    <React.Fragment>
       <Nav page={'citytour'} />
-      <CityTourHeader />
-      <CityTourHeading />
-      <CityTourCards />
-      <CelebrityTourDetails />
-      <CityTourDetails />
-      <CityTourTable />
+      <Header key={CityTourTitle.id} headerData={CityTourTitle}/>
+      <TextHeadingWithPara textData={CityTourHeadingText}/>
+      <CardsSmall tourCardsData={CityTourCardDetails}/>
+      <TextSmallHeadingWithPara textData={CelebrityHomesTourDetails}/>
+      <TextHeadingWithPara textData={CityTourDetailsText}/>
+      <Table key={CityTourPricingDetails.id} pricingTableData={CityTourPricingDetails}/>
       <BusBackground/>
-    </>
+    </React.Fragment>
   );
 }
 
