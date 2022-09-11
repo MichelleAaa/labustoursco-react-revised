@@ -28,9 +28,9 @@ const CardsSmall = ({ tourCardsData }) => {
                         {tourCardData.listText.map(item => <ListItem key={item.id} listItemData={item}/>)}
                     </ul>
                     <div className="card-body">
-                        <div className="row d-flex justify-content-center align-items-center">
+                        <div className="row d-flex justify-content-center align-items-center card-link-bottom">
                             <div className="col-10">
-                                <div className="card-link-bottom text-center">
+                                <div className="text-center card-link">
                                     {tourCardData.id === 1 ? <BookingModal key={tourCardData.id} linkType={'text'} text={tourCardData.button.text}/> : <PageLink key={tourCardData.id} text={tourCardData.button.text} link={tourCardData.button.link} />}
                                 </div>
                             </div>

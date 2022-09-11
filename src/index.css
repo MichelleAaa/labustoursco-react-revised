@@ -1,3 +1,17 @@
+:root {
+  --font-dark: #565656;
+  --gradient-light: rgba(255, 255, 255, 0.65);
+  --font-roboto: 'Roboto', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-otr: 'Over the Rainbow', cursive;
+  --font-vajahday: "Vajahday Script", sans-serif;
+  --font-size-small-0: 1.2rem;
+  --font-size-small-1: 1.3rem;
+  --font-size-small-2: 1.4rem;
+  --font-size-med-1: 1.7rem;
+  --font-size-large-1: 2rem;
+}
+
 html,
 body,
 div,
@@ -129,6 +143,13 @@ table {
   border-spacing: 0;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 .sticky-nav {
   height: 8vh;
   width: 100vw;
@@ -234,17 +255,17 @@ table {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(./assets/card-city.jpg);
+  background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light)), url(./assets/card-city.jpg);
 }
 
 /* .jumbotron-home {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(./assets/downtownla.jpg);
+  background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light)), url(./assets/downtownla.jpg);
 } */
 
 .jumbotron-title-subtext {
   align-self: center;
-  font-family: "Roboto", sans-serif;
-  color: #565656;
+  font-family: var(--font-roboto);
+  color: var(--font-dark);
   color: rgba(255, 255, 255, 0.99);
   text-shadow: 3px 3px rgba(227, 39, 39, 0.55);
   text-decoration: underline;
@@ -257,11 +278,11 @@ table {
 
 .navbar-icon-title {
   text-align: center;
-  font-family: "Over the Rainbow", cursive;
-  color: #565656;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+  font-family: var(--font-otr);
+  color: var(--font-dark);
+  text-shadow: 3px 3px var(--gradient-light);
   text-shadow: 3px 3px white;
-  font-size: 2rem;
+  font-size: var(--font-size-large-1);
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -269,28 +290,28 @@ table {
 
 .navbar-la-title {
   align-self: center;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   font-weight: bold;
-  color: #565656;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+  color: var(--font-dark);
+  text-shadow: 3px 3px var(--gradient-light);
   text-decoration-thickness: 1px;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
-  font-size: 1.7rem;
+  font-size: var(--font-size-med-1);
 }
 
 .jumbotron-title,
 .home-jumbotron-text {
   text-align: center;
-  font-family: "Over the Rainbow", cursive;
-  color: #565656;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+  font-family: var(--font-otr);
+  color: var(--font-dark);
+  text-shadow: 3px 3px var(--gradient-light);
 }
 
 /* .header-tour-descrip2 {
-  color: #565656;
+  color: var(--font-dark);
   font-weight: bold;
   font-family: "Lato", sans-serif;
   text-shadow: white;
@@ -365,7 +386,7 @@ table {
 
 .navbar {
   margin-top: -40px;
-  font-size: 1.7rem;
+  font-size: var(--font-size-med-1);
 }
 
 .big-height {
@@ -373,8 +394,8 @@ table {
 }
 
 .header-arrow {
-  color: #565656;
-  font-size: 1.7rem;
+  color: var(--font-dark);
+  font-size: var(--font-size-med-1);
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(to right, rgba(236, 233, 231, 0.6), rgba(35, 35, 35, 0.9));
@@ -408,19 +429,19 @@ table {
 
 .btn-secondary {
   font-family: 'Dancing Script';
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-lato);
   font-weight: bold;
   background-image: linear-gradient(to right, rgba(227, 39, 39, 0.95), rgba(227, 39, 39, 0.75));
   background-color: white;
   background-color: rgba(227, 39, 39, 0.95);
-  border: 1px solid #565656;
+  border: 1px solid var(--font-dark);
   color: white;
 }
 
 .btn-secondary:hover {
   background-color: white;
   background-image: linear-gradient(to right, rgba(227, 39, 39, 0.75), rgba(227, 39, 39, 0.95));
-  border: 1px solid #565656;
+  border: 1px solid var(--font-dark);
 }
 
 .btn-main {
@@ -434,7 +455,7 @@ table {
 
 .btn-text, .btn-text:link,
 .btn-text:visited {
-  font-size: 1.7rem;
+  font-size: var(--font-size-med-1);
   color: white;
   display: inline block;
   text-decoration: none;
@@ -443,8 +464,8 @@ table {
 }
 
 .btn-secondary:hover .btn-text, .btn-text:hover {
-  color: #565656;
-  text-shadow: 1px 1px 1px #565656;
+  color: var(--font-dark);
+  text-shadow: 1px 1px 1px var(--font-dark);
 }
 
 /* Modal */
@@ -453,9 +474,9 @@ table {
   color: white;
   font-size: 3rem;
   font-weight: bold;
-  font-family: "Over the Rainbow", cursive;
-  color: #565656;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+  font-family: var(--font-otr);
+  color: var(--font-dark);
+  text-shadow: 3px 3px var(--gradient-light);
   background-color: rgba(245, 166, 166, 0.1);
 }
 
@@ -477,8 +498,8 @@ table {
 input,
 textarea,
 select {
-  color: #565656;
-  font-family: "Vajahday Script", sans-serif;
+  color: var(--font-dark);
+  font-family: var(--font-vajahday);
   font-weight: normal;
 }
 
@@ -487,20 +508,20 @@ select {
 }
 
 .modal-text {
-  font-size: 1.2rem;
+  font-size: var(--font-size-small-0);
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
 }
 
 #bookingModal input,
 #bookingModal .checkbox-container label,
 #bookingModal fieldset label {
-  font-family: "Vajahday Script", sans-serif;
+  font-family: var(--font-vajahday);
   font-size: 1.1rem;
 }
 
 .checkbox-container {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: var(--gradient-light);
 }
 
 input[type=checkbox]:checked+label {
@@ -509,11 +530,11 @@ input[type=checkbox]:checked+label {
 
 .btn-modal {
   color: white;
-  font-size: 1.4rem;
+  font-size: var(--font-size-small-2);
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   display: inline-block;
-  border: 1px solid #565656;
+  border: 1px solid var(--font-dark);
   border-radius: 0.25rem;
   line-height: 1.5;
   transition: .5s ease-out;
@@ -522,7 +543,7 @@ input[type=checkbox]:checked+label {
 }
 
 .btn-modal-cancel {
-  background: linear-gradient(to left, gray 50%, #565656 50%) right;
+  background: linear-gradient(to left, gray 50%, var(--font-dark) 50%) right;
   background: linear-gradient(to left, gray 50%, #868585 50%) right;
   background-size: 220%;
 }
@@ -542,16 +563,16 @@ input[type=checkbox]:checked+label {
 }
 
 .jumbotron-subtitle {
-  color: #565656;
+  color: var(--font-dark);
   font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-lato);
   text-shadow: white;
 }
 
 .text-detail {
-  font-size: 2rem;
-  color: #565656;
-  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-large-1);
+  color: var(--font-dark);
+  font-family: var(--font-roboto);
 }
 
 .text-detail > p {
@@ -565,7 +586,7 @@ input[type=checkbox]:checked+label {
 }
 
 .home-img-grid {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65));
+  background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light));
   min-height: 100vh;
   -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
@@ -584,7 +605,7 @@ input[type=checkbox]:checked+label {
   display: block;
   border: none;
   background-color: gray;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.75);
+  box-shadow: 0 var(--font-size-med-1) 4rem rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   transition: transform .1s ease-in-out;
   filter: opacity(85%);
@@ -621,8 +642,13 @@ input[type=checkbox]:checked+label {
   transform: scale(1.1);
 }
 
+.card-link:hover {
+  text-decoration: none;
+}
+
 .card-link-bottom {
-  height: 100%;
+  /* height: 100%; */
+  min-height: 78px;
 }
 
 .card-link-bottom a:hover {
@@ -678,6 +704,10 @@ input[type=checkbox]:checked+label {
   transform: scale(1.05);
 }
 
+.card-title {
+  min-height: 48px;
+}
+
 .card-btn {
   background-color: navy;
   border: 1px solid black;
@@ -689,13 +719,13 @@ input[type=checkbox]:checked+label {
 }
 
 .celebrity-homes {
-  color: #565656;
-  font-family: "Roboto", sans-serif;
+  color: var(--font-dark);
+  font-family: var(--font-roboto);
 }
 
 @media only screen and (min-width: 320px) {
   .celebrity-homes > p {
-    font-size: 1.7rem;
+    font-size: var(--font-size-med-1);
   }
 
   .celebrity-homes > h2 {
@@ -706,7 +736,7 @@ input[type=checkbox]:checked+label {
 
 @media only screen and (min-width: 768px) {
   .celebrity-homes > p {
-    font-size: 2rem;
+    font-size: var(--font-size-large-1);
     margin: 5px;
     padding: 10px;
   }
@@ -719,7 +749,7 @@ input[type=checkbox]:checked+label {
 }
 
 .bus-background {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(./assets/bus-large.png);
+  background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light)), url(./assets/bus-large.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -731,7 +761,7 @@ input[type=checkbox]:checked+label {
 
 .carousel-wrapper {
   color: rgba(255, 255, 255, .95);
-  font-size: 1.7rem;
+  font-size: var(--font-size-med-1);
   background-color: rgba(86, 86, 86, .80);
   border: 2px solid gray;
   border-radius: 10px;
@@ -767,8 +797,8 @@ input[type=checkbox]:checked+label {
 
 .footer-title {
   color: gray;
-  text-shadow: 1px 1px 1px #565656;
-  font-family: "Lato", sans-serif;
+  text-shadow: 1px 1px 1px var(--font-dark);
+  font-family: var(--font-lato);
 }
 
 footer li {
@@ -780,7 +810,7 @@ footer a,
 .contact-links,
 .footer-item,
 .copyright {
-  color: #565656;
+  color: var(--font-dark);
 }
 
 .footer-p {
@@ -792,7 +822,7 @@ footer a,
   footer a,
   .contact-links,
   .footer-item {
-    font-size: 1.2rem;
+    font-size: var(--font-size-small-0);
   }
 
   .footer-title {
@@ -805,11 +835,11 @@ footer a,
   footer a,
   .contact-links,
   .footer-item {
-    font-size: 1.4rem;
+    font-size: var(--font-size-small-2);
   }
 
   .footer-title {
-    font-size: 2rem;
+    font-size: var(--font-size-large-1);
   }
 }
 
@@ -836,8 +866,8 @@ footer a,
 }
 
 tr {
-  font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-small-1);
+  font-family: var(--font-roboto);
   font-weight: bold;
 }
 
@@ -845,8 +875,8 @@ thead {
   background: gray;
   color: white;
   font-weight: bold;
-  font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-small-2);
+  font-family: var(--font-roboto);
 }
 
 @media only screen and (min-width: 320px) {
@@ -855,17 +885,17 @@ thead {
   }
 
   thead {
-    font-size: 1.2rem;
+    font-size: var(--font-size-small-0);
   }
 }
 
 @media only screen and (min-width: 768px) {
   tr {
-    font-size: 1.3rem;
+    font-size: var(--font-size-small-1);
   }
 
   thead {
-    font-size: 1.4rem;
+    font-size: var(--font-size-small-2);
   }
 }
 
@@ -881,9 +911,9 @@ thead {
 }
 
 .section-text {
-  font-size: 1.3rem;
-  color: #565656;
-  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-small-1);
+  color: var(--font-dark);
+  font-family: var(--font-roboto);
 }
 
 .section-heading {
@@ -893,21 +923,21 @@ thead {
 
 @media only screen and (min-width: 320px) {
   .section-text {
-    font-size: 1.4rem;
+    font-size: var(--font-size-small-2);
   }
 
   .section-heading {
-    font-size: 1.7rem;
+    font-size: var(--font-size-med-1);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .section-text {
-    font-size: 1.7rem;
+    font-size: var(--font-size-med-1);
   }
 
   .section-heading {
-    font-size: 2rem;
+    font-size: var(--font-size-large-1);
   }
 }
 
@@ -1001,8 +1031,8 @@ thead {
 
 .faq-card .card-header h3 *,
 .faq-card-2 .card-header h3 * {
-  color: #565656;
-  font-size: 1.3rem;
+  color: var(--font-dark);
+  font-size: var(--font-size-small-1);
   font-family: sans-serif;
   text-decoration: none;
 }
@@ -1034,8 +1064,15 @@ thead {
 }
 
 form {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-med-1);
+}
+
+.contact-form-text {
+  font-family: sans-serif;
+  font-size: var(--font-size-small-0);
+  color: rgb(105, 105, 105);
+  font-style: italic;
 }
 
 .contactus-img {

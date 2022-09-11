@@ -45,20 +45,20 @@ const ContactForm = (props) => {
                             <div className="row form-group">
                                 <div className="col">
                                     <label htmlFor="first-name">{formData.firstName.input}</label>
-                                    <input id="first-name" type="text" className="form-control" placeholder={formData.firstName.placeholder} name="first-name" onChange={handleInputChange}/>
+                                    <input id="first-name" type="text" className="form-control contact-form-text" placeholder={formData.firstName.placeholder} name="first-name" onChange={handleInputChange}/>
                                 </div>
                                 <div className="col">
                                     <label htmlFor="last-name">{formData.lastName.input}</label>
-                                    <input id="last-name" type="text" className="form-control" placeholder={formData.lastName.placeholder} name="last-name" onChange={handleInputChange}/>
+                                    <input id="last-name" type="text" className="form-control contact-form-text" placeholder={formData.lastName.placeholder} name="last-name" onChange={handleInputChange}/>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="contact-email">{formData.email.input}</label>
-                                <input type="email" className="form-control" id="contact-email" placeholder={formData.email.placeholder} name="email" onChange={handleInputChange}/>
+                                <input type="email" className="form-control contact-form-text" id="contact-email" placeholder={formData.email.placeholder} name="email" onChange={handleInputChange}/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="contact-selection">{formData.question.title}</label>
-                                <select className="form-control" id="contact-selection" name="question-type" onChange={handleInputChange}>
+                                <select className="form-control contact-form-text" id="contact-selection" name="question-type" onChange={handleInputChange}>
                                     {
                                     formData.question.selections.map(question => <SelectionItem key={question.id} optionText={question.optionText} />)
                                     }

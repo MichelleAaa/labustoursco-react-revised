@@ -25,11 +25,11 @@ export const ContactUsFormData = {
     formData: {
         firstName: {
             input: 'First Name',
-            placeholder: 'Your First Name'
+            placeholder: 'First Name'
         },
         lastName: {
             input: "Last Name",
-            placeholder: 'Your Last Name'
+            placeholder: 'Last Name'
         },
         email: {
             input: "Email Address",

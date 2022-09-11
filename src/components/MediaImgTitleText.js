@@ -4,7 +4,7 @@ const MediaImgTitleText = (props) => {
     const ListItemEven = (item) => {
         let { title, text, img } = item;
         return (
-            <div className="row row-content align-items-center mb-5 mt-5">
+            <div className="row align-items-center my-5">
                 <div className="col">
                     <article className="media section-text">
                         <img className="mr-3 img-thumbnail media-img align-self-center" src={img} alt="Breadcrumb Trail" />
@@ -21,7 +21,7 @@ const MediaImgTitleText = (props) => {
     const ListItemOdd = (item) => {
         console.log(item);
         return (
-            <div className="row row-content align-items-center mb-5 mt-5">
+            <div className="row align-items-center my-5">
                 <div className="col">
                     <article className="media section-text">
                         <div className="media-body align-self-center">

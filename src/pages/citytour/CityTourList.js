@@ -44,7 +44,7 @@ export const CityTourCardDetails = [
             }
         ],
         button: {
-                text: 'Learn More About the Tour Schedule',
+                text: 'Learn More About the Tour Schedule Here',
                 link: '#stops'
             }
     },
@@ -139,15 +139,15 @@ export const CityTourPricingDetails = {
         },
         {
             id: 1,
-            title: "1 Passenger"
+            title: "1 Traveler"
         },
         {
             id: 2,
-            title: "2 Passengers"
+            title: "2 Travelers"
         },
         {
             id: 3,
-            title: "3+ Passengers"
+            title: "3+ Travelers"
         }
     ],
     rowData: [
