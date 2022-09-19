@@ -7,8 +7,8 @@ const Header = ({ headerData }) => {
             <header className="jumbotron jumbotron-fluid">
                 <div className="container-fluid">
                     <div className="jumbotron-content">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-11 col-sm-6 ml-0 pl-0 d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center align-items-center">
+                            <div className="col-11 col-sm-6 ml-0 pl-0 d-flex justify-content-center text-center">
                                 <h1 className="jumbotron-title text-center text-nowrap "> <span className="jumbotron-title-subtext"> {headerData.supertitle ? headerData.supertitle : ''} </span>{headerData.title}</h1>
                             </div>
                         </div>

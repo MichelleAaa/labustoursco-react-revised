@@ -131,7 +131,7 @@ export const SeasideTourDetailsText = {
 };
 
 export const SeasideTourPricingDetails = {
-    id: 0,
+    id: 3,
     title: "Seaside Adventure Package",
     headings: [
         {

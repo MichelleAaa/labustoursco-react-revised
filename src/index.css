@@ -163,9 +163,7 @@ body {
 }
 
 .sticky-nav .navbar-collapse.show {
-  margin-top: 9px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 9px 0px 0px 0px;
   border: inherit;
   border-radius: 5px;
 }
@@ -205,11 +203,6 @@ body {
     font-size: inherit;
   }
 }
-
-/* .navbar-brand {
-  height: 60px;
-  width: 60px;
-} */
 
 .dropdown-menu {
   background-color: transparent;
@@ -258,14 +251,9 @@ body {
   background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light)), url(./assets/card-city.jpg);
 }
 
-/* .jumbotron-home {
-  background-image: linear-gradient(to right, var(--gradient-light), var(--gradient-light)), url(./assets/downtownla.jpg);
-} */
-
 .jumbotron-title-subtext {
   align-self: center;
   font-family: var(--font-roboto);
-  color: var(--font-dark);
   color: rgba(255, 255, 255, 0.99);
   text-shadow: 3px 3px rgba(227, 39, 39, 0.55);
   text-decoration: underline;
@@ -280,7 +268,6 @@ body {
   text-align: center;
   font-family: var(--font-otr);
   color: var(--font-dark);
-  text-shadow: 3px 3px var(--gradient-light);
   text-shadow: 3px 3px white;
   font-size: var(--font-size-large-1);
   display: inline-flex;
@@ -310,13 +297,6 @@ body {
   text-shadow: 3px 3px var(--gradient-light);
 }
 
-/* .header-tour-descrip2 {
-  color: var(--font-dark);
-  font-weight: bold;
-  font-family: "Lato", sans-serif;
-  text-shadow: white;
-} */
-
 .header-line {
   background-color: #e32727;
 }
@@ -326,7 +306,6 @@ body {
     font-size: 5.5rem;
   }
 
-  /* .header-tour-descrip2, */
   .jumbotron-subtitle {
     font-size: 2.3rem;
   }
@@ -341,7 +320,6 @@ body {
     font-size: 7rem;
   }
 
-  /* .header-tour-descrip2, */
   .jumbotron-subtitle {
     font-size: 2.7rem;
   }
@@ -356,10 +334,6 @@ body {
     font-size: 9rem;
   }
 
-  /* .header-tour-descrip2 {
-    font-size: 2.7rem;
-  } */
-
   .jumbotron-title-subtext {
     font-size: 3.5rem;
   }
@@ -372,10 +346,10 @@ body {
 
 .jumbotron-content {
   margin-top: 41vh;
+  margin-right: -50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
@@ -415,10 +389,10 @@ body {
 .header-arrow-text {
   color: white;
   margin: 0;
+  margin-right: -50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
@@ -428,11 +402,9 @@ body {
 }
 
 .btn-secondary {
-  font-family: 'Dancing Script';
   font-family: var(--font-lato);
   font-weight: bold;
   background-image: linear-gradient(to right, rgba(227, 39, 39, 0.95), rgba(227, 39, 39, 0.75));
-  background-color: white;
   background-color: rgba(227, 39, 39, 0.95);
   border: 1px solid var(--font-dark);
   color: white;
@@ -543,7 +515,6 @@ input[type=checkbox]:checked+label {
 }
 
 .btn-modal-cancel {
-  background: linear-gradient(to left, gray 50%, var(--font-dark) 50%) right;
   background: linear-gradient(to left, gray 50%, #868585 50%) right;
   background-size: 220%;
 }
@@ -566,7 +537,6 @@ input[type=checkbox]:checked+label {
   color: var(--font-dark);
   font-weight: bold;
   font-family: var(--font-lato);
-  text-shadow: white;
 }
 
 .text-detail {
@@ -642,20 +612,23 @@ input[type=checkbox]:checked+label {
   transform: scale(1.1);
 }
 
+.card-link {
+      color: #007bff;
+}
+
 .card-link:hover {
   text-decoration: none;
 }
 
 .card-link-bottom {
-  /* height: 100%; */
   min-height: 78px;
 }
 
-.card-link-bottom a:hover {
+.card-link-bottom a:hover, .card-link-bottom p:hover {
   color: #e32727;
 }
 
-.card-link-bottom a:after {
+.card-link-bottom a:after, .card-link-bottom p:after {
   position: absolute;
   top: 0%;
   right: 100%;
@@ -668,7 +641,7 @@ input[type=checkbox]:checked+label {
   transition: height 0.5s ease-in-out;
 }
 
-.card-link-bottom a:hover:after {
+.card-link-bottom a:hover:after, .card-link-bottom p:hover:after {
   height: 100%;
 }
 
@@ -730,7 +703,7 @@ input[type=checkbox]:checked+label {
 
   .celebrity-homes > h2 {
     font-size: 2.5rem;
-      padding-bottom: 4px;
+    padding-bottom: 4px;
   }
 }
 
@@ -818,7 +791,6 @@ footer a,
 }
 
 @media only screen and (min-width: 320px) {
-
   footer a,
   .contact-links,
   .footer-item {
@@ -831,7 +803,6 @@ footer a,
 }
 
 @media only screen and (min-width: 768px) {
-
   footer a,
   .contact-links,
   .footer-item {
@@ -843,7 +814,7 @@ footer a,
   }
 }
 
-/* tours specific */
+/* Tours specific */
 .gradient-background {
   /* Created with https://www.css-gradient.com */
   background: #646366;
@@ -911,7 +882,7 @@ thead {
 }
 
 .section-text {
-  font-size: var(--font-size-small-1);
+  font-size: var(--font-size-small-1); 
   color: var(--font-dark);
   font-family: var(--font-roboto);
 }

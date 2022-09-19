@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="site-footer d-block">
             <div className="container-fluid">
                 <div className="row px-0 pt-4 d-flex justify-content-center mx-0">
-                    <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
+                    <div className="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
                         <h2 className="footer-title pb-3">Links</h2>
                         <ul className="list-unstyled footer-item">
                             <li><Link to='/'>Home</Link></li>

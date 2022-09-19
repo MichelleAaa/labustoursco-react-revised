@@ -19,7 +19,7 @@ const MediaImgTitleText = (props) => {
     } 
 
     const ListItemOdd = (item) => {
-        console.log(item);
+
         return (
             <div className="row align-items-center my-5">
                 <div className="col">

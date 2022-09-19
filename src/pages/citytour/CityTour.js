@@ -13,10 +13,10 @@ function CityTour() {
     <React.Fragment>
       <Nav page={'citytour'} />
       <Header key={CityTourTitle.id} headerData={CityTourTitle}/>
-      <TextHeadingWithPara textData={CityTourHeadingText}/>
+      <TextHeadingWithPara key={1} textData={CityTourHeadingText}/>
       <CardsSmall tourCardsData={CityTourCardDetails}/>
       <TextSmallHeadingWithPara textData={CelebrityHomesTourDetails}/>
-      <TextHeadingWithPara textData={CityTourDetailsText}/>
+      <TextHeadingWithPara key={2} textData={CityTourDetailsText}/>
       <Table key={CityTourPricingDetails.id} pricingTableData={CityTourPricingDetails}/>
       <BusBackground/>
     </React.Fragment>

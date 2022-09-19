@@ -9,15 +9,15 @@ export const CityTourTitle = {
 };
 
 export const CityTourHeadingText = {
-    id: 0,
+    id: 7,
     title: "Lorem ipsum dolor sit amet",
     text: [
         {
-            id: 0,
+            id: 7.1,
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?"
         },
         {
-            id: 2,
+            id: 7.2,
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore dolore."
         }
     ]
@@ -31,7 +31,7 @@ export const CityTourCardDetails = [
         img: imgTourCard1,
         listText: [
             {
-                id: 0,
+                id: 1,
                 text: 'Cras justo odio'
             },
             {
@@ -55,7 +55,7 @@ export const CityTourCardDetails = [
         img: imgTourCard2,
         listText: [
             {
-                id: 0,
+                id: 1,
                 text: 'Cras justo odio'
             },
             {
@@ -79,7 +79,7 @@ export const CityTourCardDetails = [
         img: imgTourCard3,
         listText: [
             {
-                id: 0,
+                id: 1,
                 text: 'Cras justo odio'
             },
             {
@@ -99,38 +99,38 @@ export const CityTourCardDetails = [
 ];
 
 export const CelebrityHomesTourDetails = {
-    id: 0,
+    id: 0.1,
     title: "Optional 2-Hour Celebrity Homes Tour",
     text: [
         {
-            id: 0,
+            id: 0.01,
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!"
         },
         {
-            id: 1,
+            id: 0.02,
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas."
         }
     ]
 };
 
 export const CityTourDetailsText = {
-    id: 0,
+    id: 1,
     htmlId: 'stops',
     title: "See Downtown L.A., Santa Monica, Beverly Hills, and More",
     text: [
         {
-            id: 0,
+            id: 1.1,
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque, harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!"
         },
         {
-            id: 1,
+            id: 1.2,
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe alias iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a obcaecati nobis, labore omnis minima? Reprehenderit architecto quam eos eaque."
         }
     ]
 };
 
 export const CityTourPricingDetails = {
-    id: 0,
+    id: 3,
     title: "City Tour Package",
     headings: [
         {
