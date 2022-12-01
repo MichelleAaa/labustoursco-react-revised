@@ -11,7 +11,7 @@ import Error from './components/Error';
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/labustoursco-react-revised">
         <Routes>
           <Route path='/' element={<HomePage />}/>
             <Route index element={<HomePage />} />
