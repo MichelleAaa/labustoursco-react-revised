@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/labustoursco-react-revised/static/css/main.94e5ad19.css",
+    "main.js": "/labustoursco-react-revised/static/js/main.da5c05fa.js",
+    "static/js/787.275b9b1c.chunk.js": "/labustoursco-react-revised/static/js/787.275b9b1c.chunk.js",
+    "static/media/card-seaside.jpg": "/labustoursco-react-revised/static/media/card-seaside.fb201516f0c7ad7d2760.jpg",
+    "static/media/santamonicacropped.png": "/labustoursco-react-revised/static/media/santamonicacropped.1b308350d438ef477c79.png",
+    "static/media/bus-large.png": "/labustoursco-react-revised/static/media/bus-large.fdd97ecbddb699c82f62.png",
+    "static/media/hollywoodpalm.jpg": "/labustoursco-react-revised/static/media/hollywoodpalm.dee9a166943f9f4c6901.jpg",
+    "static/media/venice-beach-sand.jpg": "/labustoursco-react-revised/static/media/venice-beach-sand.41bb5d17326cdc7d6c1d.jpg",
+    "static/media/santa-monica-beach.jpg": "/labustoursco-react-revised/static/media/santa-monica-beach.56f746e2f40a28f7e69d.jpg",
+    "static/media/city-tour-card-beverlyhills.jpg": "/labustoursco-react-revised/static/media/city-tour-card-beverlyhills.75b9d5c968c8d6c1f6fc.jpg",
+    "static/media/city-tour-card-palms.jpg": "/labustoursco-react-revised/static/media/city-tour-card-palms.dbbf080d3d35b4fbbb49.jpg",
+    "static/media/downtownla.jpg": "/labustoursco-react-revised/static/media/downtownla.393ad441b039c861277c.jpg",
+    "static/media/hollywood-tower-cropped.jpg": "/labustoursco-react-revised/static/media/hollywood-tower-cropped.e4a1a5c5c9e02fa80fd4.jpg",
+    "static/media/hollywood-brush.jpg": "/labustoursco-react-revised/static/media/hollywood-brush.12abccd6ec5e075e6bbf.jpg",
+    "static/media/la-sky.jpg": "/labustoursco-react-revised/static/media/la-sky.0feb9224609c6cad7ca2.jpg",
+    "static/media/beach-trip.jpg": "/labustoursco-react-revised/static/media/beach-trip.385a26d529253fe50c5b.jpg",
+    "static/media/venice-beach-skating.jpg": "/labustoursco-react-revised/static/media/venice-beach-skating.53001e988104fb3cc833.jpg",
+    "static/media/lacropped.jpg": "/labustoursco-react-revised/static/media/lacropped.73d1f2f1df3498b6b02e.jpg",
+    "static/media/city-tour-card-beverly-hills.jpg": "/labustoursco-react-revised/static/media/city-tour-card-beverly-hills.24655308959c8253a137.jpg",
+    "static/media/card-city.jpg": "/labustoursco-react-revised/static/media/card-city.1835ab36661425802c9c.jpg",
+    "static/media/citytourbanner.jpg": "/labustoursco-react-revised/static/media/citytourbanner.815fcde91cb739e8ef80.jpg",
+    "static/media/l.a.bustourslogocropped.png": "/labustoursco-react-revised/static/media/l.a.bustourslogocropped.c2a6f0778c2c54d7007c.png",
+    "index.html": "/labustoursco-react-revised/index.html",
+    "main.94e5ad19.css.map": "/labustoursco-react-revised/static/css/main.94e5ad19.css.map",
+    "main.da5c05fa.js.map": "/labustoursco-react-revised/static/js/main.da5c05fa.js.map",
+    "787.275b9b1c.chunk.js.map": "/labustoursco-react-revised/static/js/787.275b9b1c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e5ad19.css",
+    "static/js/main.da5c05fa.js"
+  ]
+}
