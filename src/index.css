@@ -315,7 +315,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 499px) {
+  .jumbotron-title {
+    font-size: 3.3rem;
+  }
+
+  .jumbotron-subtitle {
+    font-size: 2rem;
+  }
+
+  .jumbotron-title-subtext {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
   .jumbotron-title {
     font-size: 5.5rem;
   }
@@ -547,6 +561,12 @@ input[type=checkbox]:checked+label {
   text-shadow: 1px 1px 1px #f5a6a6;
 }
 
+@media only screen and (max-width: 400px) {
+  .display-4 {
+    font-size: 2.3rem;
+  }
+}
+
 .text-detail {
   font-size: var(--font-size-large-1);
   color: var(--font-dark);
@@ -704,6 +724,11 @@ input[type=checkbox]:checked+label {
   font-family: var(--font-roboto);
 }
 
+.celebrity-homes-buffer {
+  height: 400px;
+  width: 100%;
+}
+
 @media only screen and (min-width: 320px) {
   .celebrity-homes > p {
     font-size: var(--font-size-med-1);
@@ -772,6 +797,16 @@ input[type=checkbox]:checked+label {
   font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 449px) {
+  .testimonial-heading {
+    font-size: 1.7rem;
+  }
+
+  .p-1 {
+    font-size: 1.3rem;
+  }
+}
+
 .site-footer {
   background-image: linear-gradient(to right, rgba(236, 233, 231, 0.6), rgba(86, 86, 86, 0.3));
 }
@@ -831,12 +866,18 @@ footer a,
   background: linear-gradient(to bottom right, rgba(100, 99, 102, 0.3), rgba(233, 231, 231, 0.3));
   -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  min-height: 100vh;
+  min-height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 449px) {
+  .gradient-background {
+    min-height: 1100px;
+  }
 }
 
 .table {
@@ -858,9 +899,27 @@ thead {
   font-family: var(--font-roboto);
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 449px) {
+  tr {
+    font-size: 12px;
+  }
+
+  .table-th {
+    font-size: 12px;
+  }
+
+  thead {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
   tr {
     font-size: 1.1rem;
+  }
+
+  .table-th {
+    font-size: .9rem;
   }
 
   thead {

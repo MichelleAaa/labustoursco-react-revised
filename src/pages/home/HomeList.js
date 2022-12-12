@@ -135,7 +135,7 @@ export const ReviewCarouselData = [
         id: 3,
         heading: 'Worth It',
         stars: 5,
-        text: 'My family and I are considering moving to L.A., so this tour was great to get a sense of what the area has to offer.',
+        text: 'My family and I are considering moving to L.A., so this tour was great to get a sense the place.',
         name: 'Tony',
         location: 'San Antonio, TX'
     }

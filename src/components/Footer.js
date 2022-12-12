@@ -22,13 +22,13 @@ const Footer = () => {
                             <div className="text-right">
                                 <h2 className="footer-title pb-3">Our Location:</h2>
                                 <p className="footer-item">123 Beyond St., Ste 456, </p>
-                                <p className="footer-item p-1">Beverly Hills, CA 90210</p>
+                                <p className="footer-item">Beverly Hills, CA 90210</p>
                                 <br/>
-                                <a role="button" className="contact-links" href="tel:+12345678901"><i className="fa fa-phone footer-p"></i>
+                                <a role="button" className="contact-links text-nowrap" href="tel:+12345678901"><i className="fa fa-phone footer-p"></i>
                                     {' '}1-234-567-8901</a><br />
-                                <a role="button" className="contact-links" href="mailto:office@labus.com"><i className="fa fa-envelope-o footer-p"></i>
+                                <a role="button" className="contact-links text-nowrap" href="mailto:office@labus.com"><i className="fa fa-envelope-o footer-p"></i>
                                     {' '}office@labus.com</a><br />
-                                <a role="button" className="contact-links" href="tel:+19876543210"><i className="fa fa-fax footer-p"></i>
+                                <a role="button" className="contact-links text-nowrap" href="tel:+19876543210"><i className="fa fa-fax footer-p"></i>
                                     {' '}1-987-654-3210</a><br />
                             </div>
                         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center">
-                    <div className="col-sm-6 text-center pb-2">
+                    <div className="col-sm-6 text-center text-nowrap pb-2">
                         <a className="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
                                 className="fa fa-instagram"></i></a>
                         <a className="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i

@@ -11,7 +11,7 @@ const CardsLarge = ({ cardsData }) => {
         };
 
         return(
-            <div className="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
+            <div className="col-11 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
                 <div className="card home-card mb-5">
                     <img src={CardData.img} alt="" className="img-fluid card-img" />
                     <div className="card-body" >
@@ -25,7 +25,7 @@ const CardsLarge = ({ cardsData }) => {
                     </ul>
                     <div className="card-body">
                         <div className="row d-flex justify-content-center align-items-center card-link-bottom">
-                            <div className="col-5">
+                            <div className="col-6 col-sm-5">
                                 <div className="card-link">
                                     <BookingModal linkType={'text'} text={CardData.button1.text}/>
                                 </div>

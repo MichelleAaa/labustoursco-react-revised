@@ -8,9 +8,9 @@ const Nav = (props) => {
         <nav className="container-fluid">
             <div className='sticky-top'>
                 <div className="row sticky-nav p-auto d-flex justify-content-center" id="sticky-nav">
-                    <div className="col-12 d-flex justify-content-end">
-                        <div className="navbar navbar-expand-lg navbar-light pt-0">
-                            <Link to='/' className="navbar-brand align-self-start"><img src={logo} alt="" height="60" width="60" /></Link>
+                    <div className="col-12 d-flex justify-content-end align-items-center">
+                        <div className="navbar navbar-expand-lg navbar-light pt-1">
+                            <Link to='/' className="navbar-brand align-self-start"><img src={logo} alt="" height="50" width="50" /></Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
