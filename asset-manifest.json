@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/labustoursco-react-revised/static/css/main.94e5ad19.css",
-    "main.js": "/labustoursco-react-revised/static/js/main.da5c05fa.js",
+    "main.css": "/labustoursco-react-revised/static/css/main.2898bc69.css",
+    "main.js": "/labustoursco-react-revised/static/js/main.ebc6422c.js",
     "static/js/787.275b9b1c.chunk.js": "/labustoursco-react-revised/static/js/787.275b9b1c.chunk.js",
     "static/media/card-seaside.jpg": "/labustoursco-react-revised/static/media/card-seaside.fb201516f0c7ad7d2760.jpg",
     "static/media/santamonicacropped.png": "/labustoursco-react-revised/static/media/santamonicacropped.1b308350d438ef477c79.png",
@@ -23,12 +23,12 @@
     "static/media/citytourbanner.jpg": "/labustoursco-react-revised/static/media/citytourbanner.815fcde91cb739e8ef80.jpg",
     "static/media/l.a.bustourslogocropped.png": "/labustoursco-react-revised/static/media/l.a.bustourslogocropped.c2a6f0778c2c54d7007c.png",
     "index.html": "/labustoursco-react-revised/index.html",
-    "main.94e5ad19.css.map": "/labustoursco-react-revised/static/css/main.94e5ad19.css.map",
-    "main.da5c05fa.js.map": "/labustoursco-react-revised/static/js/main.da5c05fa.js.map",
+    "main.2898bc69.css.map": "/labustoursco-react-revised/static/css/main.2898bc69.css.map",
+    "main.ebc6422c.js.map": "/labustoursco-react-revised/static/js/main.ebc6422c.js.map",
     "787.275b9b1c.chunk.js.map": "/labustoursco-react-revised/static/js/787.275b9b1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94e5ad19.css",
-    "static/js/main.da5c05fa.js"
+    "static/css/main.2898bc69.css",
+    "static/js/main.ebc6422c.js"
   ]
 }
